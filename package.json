@@ -1,0 +1,27 @@
+{
+  "name": "faustine",
+  "version": "1.0.0",
+  "description": "File untuk skripsi faustine",
+  "main": "index.js",
+  "scripts": {
+    "start": "next build && next start",
+    "dev": "next",
+    "build": "next build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insgreeb-pro/Faustine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/insgreeb-pro/Faustine/issues"
+  },
+  "homepage": "https://github.com/insgreeb-pro/Faustine#readme",
+  "dependencies": {
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
