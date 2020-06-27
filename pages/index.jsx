@@ -23,7 +23,13 @@ export default () => {
           textAlign: 'center'
         }}
       >
-        <Link href="/somepage">Goto Some Page</Link>
+        <Link href="/somepage">
+          <a>Goto Some Page</a>
+        </Link>
+        <br />
+        <Link href="/learnprops">
+          <a>Goto Learn Props</a>
+        </Link>
       </div>
     </div>
   )
