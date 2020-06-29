@@ -1,9 +1,15 @@
 import { Container } from '../components/Container'
+import { FuncComponent, ClasComponent } from '../components/typeOfComponent'
 
 export default () => {
   return (
-    <Container title="Home Page">
-      <div>Super simple Page</div>
-    </Container>
+    <div>
+      <FuncComponent />
+      <ClasComponent />
+      <Container title="sedboi.png">
+        <h1>meong</h1>
+        <div>minko</div>
+      </Container>
+    </div>
   )
 }
