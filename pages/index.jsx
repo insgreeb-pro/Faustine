@@ -1,30 +1,15 @@
-import { useState, useEffect } from 'react'
-import Link from 'next/link'
-
-import { SimpleTitle } from '../components/SimpleTitle'
+import { Container } from '../components/Container'
+import { FuncComponent, ClasComponent } from '../components/typeOfComponent'
 
 export default () => {
-  const [time, setTime] = useState()
-
-  const updateTime = () => {
-    const newTime = new Date().toLocaleString()
-    setTime(newTime)
-  }
-
-  useEffect(() => {
-    setTimeout(updateTime, 1000)
-  })
-
   return (
     <div>
-      <SimpleTitle title="Hello World!" subtitle={time || '...'} />
-      <div
-        style={{
-          textAlign: 'center'
-        }}
-      >
-        <Link href="/somepage">Goto Some Page</Link>
-      </div>
+      <FuncComponent />
+      <ClasComponent />
+      <Container title="sedboi.png">
+        <h1>meong</h1>
+        <div>minko</div>
+      </Container>
     </div>
   )
 }
