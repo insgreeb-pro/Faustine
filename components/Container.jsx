@@ -1,4 +1,6 @@
-export const Container = ({ children }) => {
+import Head from 'next/head'
+
+export const Container = ({ children, title }) => {
   return (
     <div
       style={{
@@ -11,6 +13,9 @@ export const Container = ({ children }) => {
         borderRadius: '5px'
       }}
     >
+      <Head>
+        <title>{title}</title>
+      </Head>
       {children}
     </div>
   )
