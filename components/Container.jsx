@@ -2,8 +2,9 @@ import Head from 'next/head'
 
 export const Container = ({ children, title }) => {
   return (
-    <div
-      style={{
+    <div>
+      style=
+      {{
         backgroundColor: '#EFEFFF',
         width: '50%',
         margin: '10px auto 0px',
@@ -12,7 +13,6 @@ export const Container = ({ children, title }) => {
         padding: '20px',
         borderRadius: '5px'
       }}
-    >
       {children}
     </div>
   )
