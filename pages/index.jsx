@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import { Container } from '../components/Container'
-import { FuncComponent, ClasComponent } from '../components/typeOfComponent'
-import { Cekproperti } from '../components/assignproperty'
+import Head from "next/head";
+import { Container } from "../components/Container";
+import { FuncComponent, ClasComponent } from "../components/typeOfComponent";
+import { Cekproperti } from "../components/assignproperty";
 
 export default () => {
   return (
@@ -18,8 +18,7 @@ export default () => {
           <h4>this my children</h4>
         </Cekproperti>
         <Cekproperti nama="Jajang" gelar="pengusaha" />
-        <p>Jajajajaja</p>
       </Container>
     </div>
-  )
-}
+  );
+};

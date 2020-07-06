@@ -2,10 +2,10 @@ export const Cekproperti = ({ nama, gelar, children }) => {
   return (
     <div>
       {children}
-      <h1>
+      <p>
         {nama} sebagai {gelar}
-      </h1>
+      </p>
       {children}
     </div>
-  )
-}
+  );
+};
