@@ -10,17 +10,16 @@ export default () => (
     <Head>
       <title>skripsi</title>
     </Head>
-
-    {/* <Container title="sedboi.png">
+    <Container title="sedboi.png">
       <FuncComponent />
       <ClasComponent />
-    </Container> */}
+    </Container>
 
     <Container>
       <Properti />
     </Container>
 
-    {/* <Container>
+    <Container>
       <ClassState />
     </Container>
 
@@ -30,6 +29,6 @@ export default () => (
 
     <Container>
       <Counter />
-    </Container> */}
+    </Container>
   </div>
 )

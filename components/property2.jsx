@@ -1,4 +1,4 @@
-function property2(data) {
+function property2({ data }) {
   return (
     <div>
       <p>
