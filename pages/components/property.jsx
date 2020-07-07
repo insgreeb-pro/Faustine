@@ -15,7 +15,7 @@ function property() {
   ]
 
   //membuat variabel baru untuk mapping masing2 data
-  const listData = datas.map((data) => <Cetak data={data} />)
+  const listData = datas.map((data) => <Cetak key={data.id} data={data} />)
 
   //menampilkan menggunakan return
   return <div>{listData}</div>

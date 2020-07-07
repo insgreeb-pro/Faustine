@@ -1,6 +1,14 @@
-import { Component } from 'react'
+import { Component } from "react"
 
-export const FuncComponent = () => <h1>This is a Functional Component</h1>
+const style1 = {
+  fontFamily: "Times New Roman",
+  backgroundColor: "blue",
+  padding: "20px",
+}
+
+export const FuncComponent = () => (
+  <p style={style1}>This is a Functional Component</p>
+)
 
 export class ClasComponent extends Component {
   render() {
