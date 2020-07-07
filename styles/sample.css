@@ -1,0 +1,5 @@
+/* sample style */
+.sample-rounded {
+  border-radius: 50%;
+  width: 100px;
+}

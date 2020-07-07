@@ -12,6 +12,9 @@ export default () => (
     </Head>
 
     <Container>
+      <div>
+        <img className="sample-rounded" src="/img/sample.jpg" />
+      </div>
       <FuncComponent />
       <h1>NO</h1>
       <ClasComponent />
