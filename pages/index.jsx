@@ -1,9 +1,9 @@
 import Head from "next/head"
-import { Container } from "./components/Container"
-import { FuncComponent, ClasComponent } from "./components/typeOfComponent"
-import Properti from "./components/property"
-import { ClassState, FunctionState } from "./components/State"
-import Counter from "./components/Counter"
+import { Container } from "../components/Container"
+import { FuncComponent, ClasComponent } from "../components/typeOfComponent"
+import Properti from "../components/property"
+import { ClassState, FunctionState } from "../components/State"
+import Counter from "../components/Counter"
 
 export default () => (
   <div>
@@ -12,6 +12,9 @@ export default () => (
     </Head>
 
     <Container>
+      <div>
+        <img className="sample-rounded" src="/img/sample.jpg" />
+      </div>
       <FuncComponent />
       <h1>NO</h1>
       <ClasComponent />
