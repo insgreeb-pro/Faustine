@@ -18,7 +18,7 @@ function property() {
   const listData = datas.map((data) => <Cetak key={data.id} data={data} />)
 
   //menampilkan menggunakan return
-  return <div>{listData}</div>
+  return <>{listData}</>
 }
 
 export default property

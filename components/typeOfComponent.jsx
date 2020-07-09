@@ -2,7 +2,9 @@ import { Component } from "react"
 
 const style1 = {
   fontFamily: "Times New Roman",
-  backgroundColor: "blue",
+  backgroundColor: "aquamarine",
+  margin: "0px",
+  borderRadius: "30px",
   padding: "20px",
 }
 

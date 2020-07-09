@@ -4,6 +4,7 @@ import { FuncComponent, ClasComponent } from "../components/typeOfComponent"
 import Properti from "../components/property"
 import { ClassState, FunctionState } from "../components/State"
 import Counter from "../components/Counter"
+import Sidebar from "../components/Sidebar"
 
 export default () => (
   <div>
@@ -11,12 +12,14 @@ export default () => (
       <title>skripsi</title>
     </Head>
 
+    <Sidebar />
+
     <Container>
-      <div>
+      {/* <div>
         <img className="sample-rounded" src="/img/sample.jpg" />
-      </div>
+      </div> */}
       <FuncComponent />
-      <h1>NO</h1>
+      <h6>NO</h6>
       <ClasComponent />
     </Container>
 
