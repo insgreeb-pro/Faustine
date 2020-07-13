@@ -21,6 +21,7 @@ body {
   box-shadow: 5px 10px 20px rgba(92, 99, 105, 0.15), -10px -15px 15px white;
 }
 
+/* Sidebar Manual */
 .sidebar {
   /* position and size */
   position: fixed;
