@@ -4,37 +4,44 @@ export default () => {
       <ul>
         <li>
           <a href="#">
-            <span>[I]</span> Menu
+            <span className="icon">[I]</span>
+            <span id="close">[X]</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <span>[I]</span>Tata Lahan Tepat Guna
+            <span className="icon">[I]</span>
+            <span className="icon">Tata Lahan Tepat Guna</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <span>[I]</span>Pengelolaan Air
+            <span className="icon">[I]</span>
+            <span className="icon">Pengelolaan Air</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <span>[I]</span>Konservasi Air
+            <span className="icon">[I]</span>
+            <span className="icon">Konservasi Air</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <span>[I]</span>Kesehatan dan Kenyamanan
+            <span className="icon">[I]</span>
+            <span className="icon">Kesehatan dan Kenyamanan</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <span>[I]</span>Pengelolaan Limbah dan Material
+            <span className="icon">[I]</span>
+            <span className="icon">Pengelolaan Limbah dan Material</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <span>[I]</span>Pengelolaan Bangunan Tingkat Lanjut
+            <span className="icon">[I]</span>
+            <span className="icon">Pengelolaan Bangunan Tingkat Lanjut</span>
           </a>
         </li>
         <li>

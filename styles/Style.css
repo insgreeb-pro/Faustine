@@ -3,6 +3,7 @@
   margin: 0px;
   padding: 0px;
   text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -21,28 +22,35 @@ body {
 }
 
 .sidebar {
-  background-color: #2d86ca;
-  display: block;
+  /* position and size */
   position: fixed;
-  height: 100%;
-  left: 0;
   top: 0;
+  left: 0;
+  height: 100%;
   width: 400px;
+  z-index: 1;
+
+  /* coloring */
+  background-color: #ecf0f3;
   box-shadow: 5px 0px 20px rgba(92, 99, 105, 0.15);
 }
 
 .sidebar ul li {
-  height: 100%;
+  /* position and size */
+  height: 65px;
   width: 100%;
-  line-height: 65px;
   padding-left: 20px;
   box-sizing: border-box;
+  line-height: 65px;
 
-  transition: background-color 1s;
-  transition-timing-function: ease;
+  /* color */
+  background-color: #ecf0f3;
+
+  /* animation */ /* gonna move it to eventhandler*/
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 
 .sidebar ul li:hover {
-  background-color: coral;
-  transition: ease;
+  background: aquamarine;
 }
