@@ -1,59 +1,47 @@
 export default () => {
+  const menus = [
+    {
+      icon: "Icon-01.svg",
+      label: "Sepeda",
+    },
+    {
+      icon: "Icon-02.svg",
+      label: "Petir",
+    },
+    {
+      icon: "Icon-03.svg",
+      label: "Otak",
+    },
+    {
+      icon: "Icon-04.svg",
+      label: "Hati",
+    },
+    {
+      icon: "Icon-05.svg",
+      label: "Gedung",
+    },
+    {
+      icon: "Icon-06.svg",
+      label: "Air",
+    },
+    {
+      icon: "Icon-07.svg",
+      label: "Pengelolaan Bangunan Tingkat Lanjut",
+    },
+    {
+      icon: "Icon-01.svg",
+      label: "Jajajaja",
+    },
+  ]
+
   return (
     <div className="sidebar">
-      <ul>
-        <li>
-          <a href="#">
-            <span className="icon">[I]</span>
-            <span id="close">[X]</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span className="icon">[I]</span>
-            <span className="icon">Tata Lahan Tepat Guna</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span className="icon">[I]</span>
-            <span className="icon">Pengelolaan Air</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span className="icon">[I]</span>
-            <span className="icon">Konservasi Air</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span className="icon">[I]</span>
-            <span className="icon">Kesehatan dan Kenyamanan</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span className="icon">[I]</span>
-            <span className="icon">Pengelolaan Limbah dan Material</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span className="icon">[I]</span>
-            <span className="icon">Pengelolaan Bangunan Tingkat Lanjut</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">B</a>
-        </li>
-        <li>
-          <a href="#">A</a>
-        </li>
-        <li>
-          <a href="#">B</a>
-        </li>
-      </ul>
+      {menus.map(({ icon, label }) => (
+        <div key={`${icon}`} className="menu">
+          <img className="logo" src={`/icons/${icon}`} />
+          <span>{label}</span>
+        </div>
+      ))}
     </div>
   )
 }
