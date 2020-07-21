@@ -38,8 +38,10 @@ export default () => {
     <div className="sidebar">
       {menus.map(({ icon, label }) => (
         <div key={`${icon}`} className="menu">
+          {/* content */}
           <img className="logo" src={`/icons/${icon}`} />
           <span>{label}</span>
+          {/* content */}
         </div>
       ))}
     </div>

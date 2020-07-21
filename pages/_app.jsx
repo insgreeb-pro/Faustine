@@ -1,11 +1,6 @@
+import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/Style.css"
-import { ThemeProvider, CSSReset } from "@chakra-ui/core"
 
 export default ({ Component, pageProps }) => {
-  return (
-    <ThemeProvider>
-      <CSSReset />
-      <Component {...pageProps} />
-    </ThemeProvider>
-  )
+  return <Component {...pageProps} />
 }
