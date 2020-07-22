@@ -1,7 +1,7 @@
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar"
 import { Container } from "../components/Container"
 
-export default ({ value, minV, maxV, unit, thld, children }) => {
+export default ({ title, value, minV, maxV, unit, thld, info }) => {
   const background = value < thld ? "#F29393" : "#93F293"
 
   return (
@@ -38,7 +38,7 @@ export default ({ value, minV, maxV, unit, thld, children }) => {
         }}
         className="circular"
       />
-      <div className="circularCaption">{children}</div>
+      <div className="circularCaption">{title}</div>
     </Container>
   )
 }
