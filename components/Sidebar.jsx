@@ -37,7 +37,7 @@ export default () => {
   return (
     <div className="sidebar">
       {menus.map(({ icon, label }) => (
-        <div key={`${icon}`} className="menu">
+        <div key={`${icon}-${label}`} className="menu">
           {/* content */}
           <img className="logo" src={`/icons/${icon}`} />
           <span>{label}</span>

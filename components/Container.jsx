@@ -1,3 +1,7 @@
-export const Container = ({ children }) => {
-  return <div className="neo">{children}</div>
+export const Container = ({ bg, children }) => {
+  return (
+    <div style={{ backgroundColor: `${bg}` }} className="neo">
+      {children}
+    </div>
+  )
 }

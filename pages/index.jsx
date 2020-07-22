@@ -1,7 +1,7 @@
 import Head from "next/head"
-import { Container } from "../components/Container"
 import Sidebar from "../components/Sidebar"
 import Content from "../components/Content"
+import Circular from "../components/Circular"
 
 const one = {
   gridArea: "1/1/span 2/span 2",
@@ -16,23 +16,27 @@ export default () => (
     <Sidebar />
 
     <Content title="Pengelolaan Limbah dan Materi">
-      <div style={one} className="item x1">
-        xX1Xx
-      </div>
-      <div className="item x2">xX2Xx</div>
-      <div className="item x3">xX3Xx</div>
-      <div className="item x4">xX4Xx</div>
-      <div className="item x5">xX5Xx</div>
-      <div className="item x6">xX6Xx</div>
-      <div className="item x7">xX7Xx</div>
-      <div className="item x8">xX8Xx</div>
-      <div className="item x9">xX9Xx</div>
-      <div className="item x10">xX10Xx</div>
-      <div className="item x11">xX11Xx</div>
-      <div className="item x12">xX12Xx</div>
-      <div className="item x13">xX13Xx</div>
-      <div className="item x14">xX14Xx</div>
-      <div className="item x15">xX15Xx</div>
+      <Circular value="10" minV="0" maxV="100" thld="50" unit="%">
+        Persentase keran auto stop
+      </Circular>
+      <Circular value="52" minV="0" maxV="100" thld="50" unit="%">
+        isi teks 02
+      </Circular>
+      <Circular value="47" minV="0" maxV="100" thld="50" unit="%">
+        isi teks 03
+      </Circular>
+      <Circular value="48" minV="0" maxV="100" thld="50" unit="%">
+        isi teks 04
+      </Circular>
+      <Circular value="49" minV="0" maxV="100" thld="50" unit="h">
+        isi teks 05
+      </Circular>
+      <Circular value="50" minV="0" maxV="100" thld="50" unit="%">
+        isi teks 06
+      </Circular>
+      <Circular value="51" minV="0" maxV="100" thld="50" unit="km">
+        isi teks 07
+      </Circular>
     </Content>
   </>
 )
