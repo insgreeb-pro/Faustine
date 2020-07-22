@@ -119,7 +119,7 @@ body {
 
 /* Circular Progress */
 .circular {
-  transform: translateY(-8px);
+  transform: translateY(-4px);
   height: 100%;
   width: 100%;
 }
@@ -128,12 +128,16 @@ body {
   /* Display */
   width: 160px;
   position: absolute;
-  transform: translateY(70px);
+  transform: translateY(74px);
 
   /* Font */
   font-size: 11pt;
   text-align: center;
   line-height: 1em;
-  overflow: none;
   white-space: normal;
+}
+
+.info {
+  position: absolute;
+  transform: translateX(71px) translateY(-74px);
 }

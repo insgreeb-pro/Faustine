@@ -1,5 +1,6 @@
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar"
+import { CircularProgressbar } from "react-circular-progressbar"
 import { Container } from "../components/Container"
+import InfoTooltip from "../components/InfoTooltip"
 
 export default ({ title, value, minV, maxV, unit, thld, info }) => {
   const background = value < thld ? "#F29393" : "#93F293"
@@ -39,6 +40,7 @@ export default ({ title, value, minV, maxV, unit, thld, info }) => {
         className="circular"
       />
       <div className="circularCaption">{title}</div>
+      <InfoTooltip title={{ title }} info={{ info }} />
     </Container>
   )
 }
