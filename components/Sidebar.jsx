@@ -1,8 +1,8 @@
-export default () => {
+export default (activePage) => {
   const menus = [
     {
-      icon: "Icon-01.svg",
-      label: "Sepeda",
+      icon: "homepage.svg",
+      label: "Home",
     },
     {
       icon: "Icon-02.svg",
@@ -10,7 +10,7 @@ export default () => {
     },
     {
       icon: "Icon-03.svg",
-      label: "Otak",
+      label: "Otak asss",
     },
     {
       icon: "Icon-04.svg",

@@ -1,33 +1,93 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
 
 /* Body Formatting */
 * {
   margin: 0px;
   padding: 0px;
+  list-style: none;
 }
 
 body {
+  height: 100vh;
   font-family: "Montserrat", sans-serif;
-  background-color: #ecf0f3;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(135deg, #ffffff, #dce6ed);
   color: #232323;
+  overflow: hidden;
 }
 
 /* CONTAINER */
 .neo {
   /* Display */
   display: flex;
-  flex-flow: column nowrap;
+  position: relative;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  align-content: space-around;
+  justify-content: space-around;
   border-radius: 40px;
   padding: 20px; /* syntax: top right bottom left */
   height: 100%;
   width: 100%;
 
   /* Color */
-  box-shadow: 5px 10px 20px rgba(92, 99, 105, 0.15), -10px -15px 15px white;
+  box-shadow: 5px 10px 20px rgba(92, 99, 105, 0.2), -10px -15px 15px white;
 }
 
+.neoInset {
+  /* Display */
+  border-radius: 40px;
+  padding: 30px; /* syntax: top right bottom left */
+  height: 425px;
+  width: 30%;
+  line-height: 2.3em;
+
+  /* font */
+  overflow: hidden;
+
+  /* Color */
+  box-shadow: 5px 10px 20px rgba(92, 99, 105, 0.2) inset,
+    -10px -15px 15px white inset;
+}
+
+.neoSmall {
+  /* Display */
+  display: inline-block;
+  margin: 18px 10px 18px 0;
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+
+  /* Color */
+  box-shadow: 5px 10px 20px rgba(92, 99, 105, 0.2), -10px -15px 15px white;
+}
+
+.info {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+}
+
+.popover {
+  height: 137px;
+}
+
+.popover-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.popover-content {
+  height: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  overflow: auto;
+}
+
+/* SIDEBAR */
 /* SIDEBAR */
 .sidebar {
   /* Display */
@@ -42,7 +102,7 @@ body {
   z-index: 1;
 
   /* coloring */
-  background-color: #ecf0f3;
+  background-color: #ffffff;
   box-shadow: 5px 0px 20px rgba(92, 99, 105, 0.15);
 
   /* Transition */
@@ -82,6 +142,7 @@ body {
 }
 
 /* CONTENT GRID */
+/* CONTENT GRID */
 .content {
   position: relative;
   margin-left: 61px;
@@ -93,18 +154,18 @@ body {
   display: flex;
   align-items: center;
   height: 140px;
+  line-height: 45px;
 
   /* Font */
   font-weight: 700;
   font-size: 30pt;
-  overflow: visible;
   white-space: normal;
 }
 
 .grid-container {
   display: grid;
-  grid-template: repeat(3, 200px) / repeat(4, 200px) auto;
-  gap: 40px 100px;
+  grid-template: repeat(3, 250px) / repeat(4, 250px) auto;
+  gap: 60px;
   justify-items: center;
   align-items: center;
 }
@@ -117,7 +178,8 @@ body {
   background-color: tomato;
 }
 
-/* Circular Progress */
+/* CIRCULAR */
+/* CIRCULAR */
 .circular {
   transform: translateY(-4px);
   height: 100%;
@@ -126,18 +188,80 @@ body {
 
 .circularCaption {
   /* Display */
-  width: 160px;
+  width: 80%;
   position: absolute;
-  transform: translateY(74px);
+  transform: translateY(96px);
 
   /* Font */
-  font-size: 11pt;
+  font-size: 17px;
+  font-weight: 600;
   text-align: center;
   line-height: 1em;
   white-space: normal;
 }
 
-.info {
+/* NUMBER */
+/* NUMBER */
+.numberCaption {
+  /* Display */
   position: absolute;
-  transform: translateX(71px) translateY(-74px);
+  top: 58px;
+  width: 75%;
+
+  /* Font */
+  font-size: 19px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1em;
+  white-space: normal;
+}
+
+.numberValue {
+  /* Display */
+  position: absolute;
+  bottom: 40px;
+  width: 80%;
+
+  /* Font */
+  font-size: 60pt;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: bottom;
+  line-height: 1em;
+  white-space: normal;
+}
+
+.numberValue .numberValueUnit {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1em;
+  white-space: normal;
+}
+
+/* CAROUSEL */
+/* CAROUSEL */
+.neoCarousel {
+  /* Display */
+  align-self: start;
+  border-radius: 40px;
+  height: 400px;
+  width: 710px;
+
+  /* Color */
+  box-shadow: 5px 10px 20px rgba(92, 99, 105, 0.2), -10px -15px 15px white;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+/* MAP */
+/* MAP */
+.mapTitle {
+  /* Font */
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1em;
+  white-space: normal;
 }

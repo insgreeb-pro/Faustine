@@ -1,86 +1,97 @@
 import Head from "next/head"
+import { FaBicycle } from "react-icons/fa"
 import Sidebar from "../components/Sidebar"
-import Content from "../components/Content"
+import GridContent from "../components/GridContent"
 import Circular from "../components/Circular"
+import Number from "../components/Number"
+import Carousel from "../components/Carousel"
+import Map from "../components/Map"
+import Keterangan from "../components/Keterangan"
 
-const one = {
-  gridArea: "1/1/span 2/span 2",
-}
+// Judul halaman web
+const title = "Tata Lahan Tepat guna"
+
+// Isi slideshow
+const slides = [
+  {
+    source: "sample1.jpg",
+    judul: "Komitmen Penanganan Racun",
+    isi:
+      "Productize quick-win for the horse is out of the barn yet target rich environment that's not on the roadmap.",
+  },
+  {
+    source: "sample2.jpg",
+    judul: "Low Impact Development",
+    isi:
+      "Turd polishing. But what's the real problem we're trying to solve here?",
+  },
+  {
+    source: "sample3.jpg",
+    judul: "Peningkatan Kualitas Hidup",
+    isi:
+      "Cross-pollination organic growth, or hit the ground running quantity accountable talk",
+  },
+]
 
 export default () => (
   <>
     <Head>
-      <title>skripsi</title>
+      <title>{title}</title>
     </Head>
 
-    <Sidebar />
+    {/* Sidebar dengan halaman aktif (Tata Lahan Tepat Guna) */}
+    <Sidebar activePage={title} />
 
-    <Content title="Pengelolaan Limbah dan Materi">
+    {/* Menyusun konten dalam suatu grid*/}
+    <GridContent title={title}>
+      {/* Digunakan untuk membuat konten seperti dashboard speedometer*/}
       <Circular
-        title="Persentase keran autostop"
-        value="10"
-        minV="0"
-        maxV="100"
-        thld="50"
-        unit="%"
-        info="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae enim at
-        autem, cupiditate ut in voluptatum possimus aspernatur molestiae dolor."
-      />
-      <Circular
-        title="isi teks 02"
-        value="52"
-        minV="0"
-        maxV="100"
-        thld="50"
-        unit="%"
-        info="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+        title="Rasio RTH" //Judul untuk konten
+        ukuran="1/1/span 1/span 1" //Ukuran konten menggunakan gridArea
+        value="59" //Nilai (Rasio RTH)
+        minV="0" //Nilai minimal (Rasio RTH)
+        maxV="100" //Nilai maksimal (Rasio RTH)
+        thld="50" //Batas nilai (Rasio RTH) yang masih dianggap bagus. Kotak akan berwarna hijau apabila Nilai Rasio RTH berada diatas batas nilai, dan merah sebaliknya.
+        unit="%" //Satuan nilai
+        info="Ruang Terbuka Hijau atau disingkat RTH adalah suatu bentuk pemanfaatan lahan pada satu kawasan yang diperuntukkan untuk penghijauan tanaman." //Informasi lebih lanjut mengenai Rasio RTH
       />
 
       <Circular
-        title="isi teks 02"
-        value="47"
+        title="Rasio Green Roof"
+        ukuran="1/2/span 1/span 1" //Ukuran konten menggunakan gridArea
+        value="30"
         minV="0"
         maxV="100"
         thld="50"
         unit="%"
-        info="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+        info="Green roof merupakan atap dari sebuah gedung yang sebagian/seluruhnya ditutupi vegetasi"
       />
-      <Circular
-        title="isi teks 02"
-        value="48"
-        minV="0"
-        maxV="100"
-        thld="50"
-        unit="%"
-        info="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+
+      {/* Digunakan untuk membuat konten yang memiliki nilai dan satuan tertentu */}
+      <Number
+        title="Albedo rata-rata" //Judul untuk konten
+        ukuran="1/3/span 1/span 1" //Ukuran konten menggunakan gridArea
+        value="0.5" //Nilai (Albedo rata-rata)
+        minV="0" //Nilai minimal (Albedo rata-rata)
+        maxV="1" //Nilai maksimal (Albedo rata-rata)
+        thld="0.3" //Batas nilai (Albedo rata-rata) yang masih dianggap bagus. Kotak akan berwarna hijau apabila Nilai Rasio RTH berada diatas batas nilai, dan merah sebaliknya.
+        info="Albedo merupakan sebuah besaran yang menggambarkan perbandingan antara sinar Matahari yang tiba di permukaan bumi dan yang dipantulkan kembali ke angkasa" //Informasi lebih lanjut mengenai Rasio RTH
       />
-      <Circular
-        title="isi teks 02"
-        value="49"
-        minV="0"
-        maxV="100"
-        thld="50"
-        unit="h"
-        info="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
-      />
-      <Circular
-        title="isi teks 02"
-        value="50"
-        minV="0"
-        maxV="100"
-        thld="50"
-        unit="%"
-        info="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
-      />
-      <Circular
-        title="isi teks 02"
-        value="51"
-        minV="0"
-        maxV="100"
-        thld="50"
-        unit="km"
-        info="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
-      />
-    </Content>
+
+      <Number
+        title="Jumlah kantong sepeda"
+        ukuran="1/4/span 1/span 1"
+        value="20"
+        info="Albedo merupakan sebuah besaran yang menggambarkan perbandingan antara sinar Matahari yang tiba di permukaan bumi dan yang dipantulkan kembali ke angkasa"
+      >
+        {/*Digunakan untuk satuan yang menggunakan icon (Font Awesome Bicycle)*/}
+        <FaBicycle />{" "}
+      </Number>
+
+      <Carousel slides={slides} />
+
+      <Map title="Denah fasilitas umum di sekitar Departemen Teknik Nuklir dan Teknik Fisika Universitas Gadjah Mada" />
+      <Keterangan />
+    </GridContent>
   </>
 )
