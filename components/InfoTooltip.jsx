@@ -7,10 +7,10 @@ export default ({ title, info, bg }) => {
   return (
     <>
       <OverlayTrigger
-        trigger="click"
-        placement="top"
+        placement="right"
         overlay={
-          <Popover className="popover">
+          // ISI TOOLTIP
+          <Popover>
             <Popover.Title as="h3" className="popover-title">
               {title.title}
             </Popover.Title>
@@ -20,6 +20,7 @@ export default ({ title, info, bg }) => {
           </Popover>
         }
       >
+        {/* icon */}
         <img className="info" src={`/icons/${icon}`} />
       </OverlayTrigger>
     </>

@@ -2,18 +2,26 @@
 
 /* Body Formatting */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 body {
+  /* Display */
   height: 100vh;
+  width: 100vw;
+
+  /* Font */
   font-family: "Montserrat", sans-serif;
+  line-height: 1em;
+
+  /* Color */
   background: rgb(255, 255, 255);
   background: linear-gradient(135deg, #ffffff, #dce6ed);
+  color: #f0f293;
   color: #232323;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 /* CONTAINER */
@@ -26,7 +34,7 @@ body {
   align-content: space-around;
   justify-content: space-around;
   border-radius: 40px;
-  padding: 20px; /* syntax: top right bottom left */
+  padding: 10%; /* syntax: top right bottom left */
   height: 100%;
   width: 100%;
 
@@ -37,8 +45,8 @@ body {
 .neoInset {
   /* Display */
   border-radius: 40px;
-  padding: 30px; /* syntax: top right bottom left */
-  height: 425px;
+  padding: 1.2% 2%;
+  height: 92%;
   width: 30%;
   line-height: 2.3em;
 
@@ -51,27 +59,20 @@ body {
 }
 
 .neoSmall {
-  /* Display */
   display: inline-block;
-  margin: 18px 10px 18px 0;
+  margin-right: 5%;
   border-radius: 10px;
-  height: 50px;
-  width: 50px;
-
-  /* Color */
-  box-shadow: 5px 10px 20px rgba(92, 99, 105, 0.2), -10px -15px 15px white;
+  height: 70%;
+  width: 12.5%;
+  box-shadow: 7px 7px 10px rgba(92, 99, 105, 0.2), -5px -6px 10px white;
 }
 
 .info {
   position: absolute;
-  top: 15px;
-  right: 15px;
-  width: 35px;
-  height: 35px;
-}
-
-.popover {
-  height: 137px;
+  top: 6%;
+  right: 6%;
+  width: 15%;
+  height: 15%;
 }
 
 .popover-title {
@@ -80,11 +81,9 @@ body {
 }
 
 .popover-content {
-  height: 100px;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-size: 12px;
-  overflow: auto;
+  font-size: 0.9em;
 }
 
 /* SIDEBAR */
@@ -97,13 +96,13 @@ body {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 61px;
+  width: 3.2vw;
   /* item stay on top */
   z-index: 1;
 
   /* coloring */
   background-color: #ffffff;
-  box-shadow: 5px 0px 20px rgba(92, 99, 105, 0.15);
+  box-shadow: 5px 0px 15px rgba(92, 99, 105, 0.15);
 
   /* Transition */
   overflow: hidden;
@@ -116,25 +115,31 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
-  padding-right: 20px;
+  padding-right: 5%;
   box-sizing: border-box;
 
   /* animation */
   transition: background 0.2s ease-in-out;
 }
 
+.sidebar .menu.active {
+  background: aquamarine;
+}
+
 .logo {
   display: inline-block;
-  height: 61px;
+  height: 3.2vw;
 }
 
 .sidebar .menu span {
-  width: 239px;
+  font-size: 1em;
+  font-weight: 600;
+  width: 13.2vw;
 }
 
 /* Sidebar Transition */
 .sidebar:hover {
-  width: 300px;
+  width: 16.2vw;
 }
 
 .sidebar .menu:hover {
@@ -144,28 +149,30 @@ body {
 /* CONTENT GRID */
 /* CONTENT GRID */
 .content {
+  height: 100vh;
   position: relative;
-  margin-left: 61px;
-  padding: 0px 61px;
+  margin-left: 3.2vw;
+  padding: 0px 3.2vw;
 }
 
 .title {
   /* Display */
   display: flex;
   align-items: center;
-  height: 140px;
-  line-height: 45px;
+  height: 15vh;
 
   /* Font */
   font-weight: 700;
-  font-size: 30pt;
+  font-size: 2.5em;
   white-space: normal;
 }
 
 .grid-container {
+  height: 75vh;
   display: grid;
-  grid-template: repeat(3, 250px) / repeat(4, 250px) auto;
-  gap: 60px;
+  grid-template: repeat(3, 10.5vw) / repeat(4, 10.5vw) 36vw;
+  justify-content: space-between;
+  align-content: space-between;
   justify-items: center;
   align-items: center;
 }
@@ -181,19 +188,19 @@ body {
 /* CIRCULAR */
 /* CIRCULAR */
 .circular {
-  transform: translateY(-4px);
   height: 100%;
   width: 100%;
 }
 
 .circularCaption {
   /* Display */
-  width: 80%;
+  height: 9%;
+  width: 86%;
   position: absolute;
-  transform: translateY(96px);
+  bottom: 10%;
 
   /* Font */
-  font-size: 17px;
+  font-size: 1em;
   font-weight: 600;
   text-align: center;
   line-height: 1em;
@@ -205,11 +212,11 @@ body {
 .numberCaption {
   /* Display */
   position: absolute;
-  top: 58px;
+  top: 22%;
   width: 75%;
 
   /* Font */
-  font-size: 19px;
+  font-size: 1em;
   font-weight: 600;
   text-align: center;
   line-height: 1em;
@@ -219,11 +226,12 @@ body {
 .numberValue {
   /* Display */
   position: absolute;
-  bottom: 40px;
+  bottom: 10%;
+  height: 30%;
   width: 80%;
 
   /* Font */
-  font-size: 60pt;
+  font-size: 4em;
   font-weight: bold;
   text-align: center;
   vertical-align: bottom;
@@ -232,7 +240,7 @@ body {
 }
 
 .numberValue .numberValueUnit {
-  font-size: 15px;
+  font-size: 0.2em;
   font-weight: 600;
   line-height: 1em;
   white-space: normal;
@@ -244,11 +252,11 @@ body {
   /* Display */
   align-self: start;
   border-radius: 40px;
-  height: 400px;
-  width: 710px;
+  height: 90%;
+  width: 100%;
 
   /* Color */
-  box-shadow: 5px 10px 20px rgba(92, 99, 105, 0.2), -10px -15px 15px white;
+  box-shadow: 8px 7px 15px rgba(92, 99, 105, 0.4), -8px -5px 7px white;
 }
 
 .carousel-inner {
@@ -259,7 +267,7 @@ body {
 /* MAP */
 .mapTitle {
   /* Font */
-  font-size: 20px;
+  font-size: 1.2em;
   font-weight: 600;
   text-align: center;
   line-height: 1em;

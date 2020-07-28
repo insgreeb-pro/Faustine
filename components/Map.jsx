@@ -12,14 +12,22 @@ import {
 } from "react-icons/fa"
 
 export default ({ title }) => {
-  const iconstyle = { height: "25px", width: "25px" }
+  const containerstyle = { padding: "2%" }
+  const iconstyle = { height: "1.5em", width: "1.5em" }
+  const mapstyle = { width: "60%", height: "85%" }
 
   return (
-    <Container ukuran="2/1/span 2/span 4">
+    <div
+      style={{ padding: "2%", gridArea: "2/1/span 2/span 4" }}
+      className="neo"
+    >
+      {/* Judul */}
       <div className="mapTitle">{title}</div>
-      <img src="/img/Image 1.jpg"></img>
+      {/* Peta */}
+      <img src="/img/map.jpg" style={mapstyle}></img>
+      {/* Legenda */}
       <Container tipe="inset">
-        <span style={{ fontStyle: "italic", fontSize: "18px" }}>Legenda:</span>
+        <span style={{ fontStyle: "italic", fontSize: "1.1em" }}>Legenda:</span>
         <ul>
           <li>
             <FaRegHospital style={iconstyle} />: Rumah sakit
@@ -50,6 +58,6 @@ export default ({ title }) => {
           </li>
         </ul>
       </Container>
-    </Container>
+    </div>
   )
 }

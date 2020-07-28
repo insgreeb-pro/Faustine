@@ -1,49 +1,55 @@
-export default (activePage) => {
+import SidebarChild from "./Sidebarchild"
+
+export default ({ activePage }) => {
   const menus = [
     {
       icon: "homepage.svg",
       label: "Home",
+      page: "index",
     },
     {
-      icon: "Icon-02.svg",
-      label: "Petir",
+      icon: "TataLahan.svg",
+      label: "Tata Lahan Tepat Guna",
+      page: "TataLahanTepatGuna",
     },
     {
-      icon: "Icon-03.svg",
-      label: "Otak asss",
+      icon: "PengelolaanAir.svg",
+      label: "Pengelolaan Air",
+      page: "PengelolaanAir",
     },
     {
-      icon: "Icon-04.svg",
-      label: "Hati",
+      icon: "KonservasiEnergi.svg",
+      label: "Konservasi Energi",
+      page: "KonservasiEnergi",
     },
     {
-      icon: "Icon-05.svg",
-      label: "Gedung",
+      icon: "KesehatanKenyamanan.svg",
+      label: "Kesehatan dan Kenyamanan",
+      page: "KesehatandanKenyamanan",
     },
     {
-      icon: "Icon-06.svg",
-      label: "Air",
+      icon: "PengelolaanLimbah.svg",
+      label: "Pengelolaan Limbah dan Material",
+      page: "PengelolaanLimbahdanMaterial",
     },
     {
-      icon: "Icon-07.svg",
+      icon: "PengelolaanTingkLanjut.svg",
       label: "Pengelolaan Bangunan Tingkat Lanjut",
-    },
-    {
-      icon: "Icon-01.svg",
-      label: "Jajajaja",
+      page: "PengelolaanBangunanTingkatLanjut",
     },
   ]
 
-  return (
-    <div className="sidebar">
-      {menus.map(({ icon, label }) => (
-        <div key={`${icon}-${label}`} className="menu">
-          {/* content */}
-          <img className="logo" src={`/icons/${icon}`} />
-          <span>{label}</span>
-          {/* content */}
-        </div>
-      ))}
-    </div>
-  )
+  const aktif = `${activePage}`
+
+  const menuTag = menus.map(({ icon, label, page }) => (
+    <SidebarChild
+      key={`${label}`}
+      icon={icon}
+      label={label}
+      page={page}
+      aktif={aktif}
+    />
+  ))
+
+  return <div className="sidebar">{menuTag}</div>
 }

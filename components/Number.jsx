@@ -6,9 +6,9 @@ export default ({
   title,
   ukuran,
   value,
+  thld,
   minV,
   maxV,
-  thld,
   unit,
   info,
   children,
@@ -16,7 +16,8 @@ export default ({
   const background = thld ? (value < thld ? "#F29393" : "#93F293") : null
   const ukuran1 = `${ukuran}`
 
-  return { children } == null ? (
+  return `${children}` == "undefined" ? (
+    //biasa
     <Container bg={background} ukuran={ukuran1}>
       <div className="numberCaption">{title}</div>
       <div className="numberValue">
@@ -26,6 +27,7 @@ export default ({
       <InfoTooltip title={{ title }} info={{ info }} bg={background} />
     </Container>
   ) : (
+    //icon
     <Container bg={background} ukuran={ukuran1}>
       <div className="numberCaption">{title}</div>
       <div className="numberValue">
@@ -33,8 +35,8 @@ export default ({
         <IconContext.Provider
           value={{
             color: "#232323",
-            size: "60px",
-            style: { verticalAlign: "bottom" },
+            size: ".6em",
+            style: { verticalAlign: "inherit" },
           }}
         >
           {children}
