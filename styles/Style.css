@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
 
-/* Body Formatting */
+/* MEDIA QUERY FOR LAPTOP */
+/*         1024px         */
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +15,7 @@ body {
 
   /* Font */
   font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
   line-height: 1em;
 
   /* Color */
@@ -22,6 +24,84 @@ body {
   color: #f0f293;
   color: #232323;
   overflow-y: hidden;
+}
+
+/* CONTENT GRID */
+/* CONTENT GRID */
+.content {
+  height: 100vh;
+  position: relative;
+  margin-left: 3.2vw;
+  padding: 0px 3.2vw;
+}
+
+.title {
+  /* Display */
+  display: flex;
+  align-items: center;
+  height: 10vh;
+
+  /* Font */
+  font-weight: 700;
+  font-size: 2em;
+  white-space: normal;
+}
+
+.grid-container {
+  height: 85vh;
+  display: grid;
+  justify-content: space-between;
+  align-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+
+.tatalahantepatguna {
+  grid-template:
+    ". . .         carousel" 15vw
+    ". . .         carousel" 15vw
+    ".          map map map" 15vw
+    "keterangan map map map" 20vw / 15vw 15vw 15vw 40vw;
+}
+
+.pengelolaanair {
+  grid-template:
+    ". . .               carousel" 15vw
+    ". . .               carousel" 15vw
+    "button     chart chart chart" 15vw
+    "keterangan chart chart chart" 20vw / 15vw 15vw 15vw 40vw;
+}
+
+.konservasienergi {
+  grid-template:
+    ". . .               carousel" 15vw
+    ". . .               carousel" 15vw
+    "button     chart chart chart" 15vw
+    "keterangan chart chart chart" 20vw / 15vw 15vw 15vw 40vw;
+}
+
+.kesehatandankenyamanan {
+  grid-template:
+    ". . . carousel  " 15vw
+    ". . . carousel  " 15vw
+    ". . . .         " 15vw
+    "keterangan . . ." 20vw / 15vw 15vw 15vw 40vw;
+}
+
+.pengelolaanlimbahdanmaterial {
+  grid-template:
+    ". . . carousel  " 15vw
+    ". . . carousel  " 15vw
+    ". . . .         " 15vw
+    "keterangan . . ." 20vw / 15vw 15vw 15vw 40vw;
+}
+
+.pengelolaanbangunantingkatlanjut {
+  grid-template:
+    "carousel carousel carousel carousel2" 15vw
+    "carousel carousel carousel carousel2" 15vw
+    ". . . .                             " 15vw
+    ". . . .                             " 20vw / 15vw 15vw 15vw 40vw;
 }
 
 /* CONTAINER */
@@ -33,18 +113,18 @@ body {
   align-items: center;
   align-content: space-around;
   justify-content: space-around;
-  border-radius: 40px;
+  border-radius: 20px;
   padding: 10%; /* syntax: top right bottom left */
   height: 100%;
   width: 100%;
 
   /* Color */
-  box-shadow: 5px 10px 20px rgba(92, 99, 105, 0.2), -10px -15px 15px white;
+  box-shadow: 3px 3px 7px rgba(92, 99, 105, 0.2), -3px -3px 3px white;
 }
 
 .neoInset {
   /* Display */
-  border-radius: 40px;
+  border-radius: 20px;
   padding: 1.2% 2%;
   height: 92%;
   width: 30%;
@@ -54,17 +134,17 @@ body {
   overflow: hidden;
 
   /* Color */
-  box-shadow: 5px 10px 20px rgba(92, 99, 105, 0.2) inset,
-    -10px -15px 15px white inset;
+  box-shadow: 3px 3px 7px rgba(92, 99, 105, 0.2) inset,
+    -3px -3px 3px white inset;
 }
 
 .neoSmall {
   display: inline-block;
   margin-right: 5%;
-  border-radius: 10px;
-  height: 70%;
-  width: 12.5%;
-  box-shadow: 7px 7px 10px rgba(92, 99, 105, 0.2), -5px -6px 10px white;
+  border-radius: 7px;
+  height: 60%;
+  width: 23%;
+  box-shadow: 2px 2px 4px rgba(92, 99, 105, 0.2), -3px -3px 5px white;
 }
 
 .info {
@@ -78,12 +158,13 @@ body {
 .popover-title {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+  font-size: 1em;
 }
 
 .popover-content {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 /* SIDEBAR */
@@ -91,7 +172,7 @@ body {
 .sidebar {
   /* Display */
   display: grid;
-  grid-template-rows: repeat(14, 1fr);
+  grid-template-rows: repeat(20, 1fr);
   position: fixed;
   top: 0;
   left: 0;
@@ -132,7 +213,7 @@ body {
 }
 
 .sidebar .menu span {
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: 600;
   width: 13.2vw;
 }
@@ -144,45 +225,7 @@ body {
 
 .sidebar .menu:hover {
   background: aquamarine;
-}
-
-/* CONTENT GRID */
-/* CONTENT GRID */
-.content {
-  height: 100vh;
-  position: relative;
-  margin-left: 3.2vw;
-  padding: 0px 3.2vw;
-}
-
-.title {
-  /* Display */
-  display: flex;
-  align-items: center;
-  height: 15vh;
-
-  /* Font */
-  font-weight: 700;
-  font-size: 2.5em;
-  white-space: normal;
-}
-
-.grid-container {
-  height: 75vh;
-  display: grid;
-  grid-template: repeat(3, 10.5vw) / repeat(4, 10.5vw) 36vw;
-  justify-content: space-between;
-  align-content: space-between;
-  justify-items: center;
-  align-items: center;
-}
-
-.item:nth-child(even) {
-  background-color: aquamarine;
-}
-
-.item:nth-child(odd) {
-  background-color: tomato;
+  color: gray;
 }
 
 /* CIRCULAR */
@@ -251,16 +294,28 @@ body {
 .neoCarousel {
   /* Display */
   align-self: start;
-  border-radius: 40px;
+  border-radius: 20px;
   height: 90%;
   width: 100%;
+  z-index: 0;
 
   /* Color */
-  box-shadow: 8px 7px 15px rgba(92, 99, 105, 0.4), -8px -5px 7px white;
+  box-shadow: 3px 3px 7px rgba(92, 99, 105, 0.2), -3px -3px 3px white;
 }
 
 .carousel-inner {
   height: 100%;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.carousel-title {
+  font-size: 2em;
 }
 
 /* MAP */
@@ -272,4 +327,284 @@ body {
   text-align: center;
   line-height: 1em;
   white-space: normal;
+}
+
+/* KETERANGAN */
+/* KETERANGAN */
+.keterangan {
+  height: 100%;
+  width: 100%;
+  justify-self: end;
+  grid-area: keterangan;
+}
+
+/* CHART */
+.chartjs-size-monitor,
+.chartjs-size-monitor-expand,
+.chartjs-size-monitor-shrink {
+  height: 100%;
+  width: 100%;
+}
+
+/* ************************ */
+/* MEDIA QUERY FOR LAPTOP L */
+/*          1440px          */
+@media only screen and (min-width: 1440px) {
+  body {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+
+  /* CONTENT GRID */
+  /* CONTENT GRID */
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  .tatalahantepatguna {
+    grid-template:
+      ". . .       carousel" 12vw
+      ". . .       carousel" 12vw
+      ". .          map map" 12vw
+      ". keterangan map map" 12vw / 12vw 12vw 12vw 40vw;
+  }
+
+  .pengelolaanair {
+    grid-template:
+      ". . . carousel" 12vw
+      ". . . carousel" 12vw
+      ". button chart chart" 12vw
+      ". keterangan  chart chart" 12vw / 12vw 12vw 12vw 40vw;
+  }
+
+  .konservasienergi {
+    grid-template:
+      ". . .          carousel" 12vw
+      ". . .          carousel" 12vw
+      ".    button chart chart" 12vw
+      ". keterangan chart chart" 12vw / 12vw 12vw 12vw 40vw;
+  }
+
+  .kesehatandankenyamanan {
+    grid-template:
+      ". . .   carousel" 12vw
+      ". . .   carousel" 12vw
+      ". . . .         " 12vw
+      "keterangan . . ." 12vw / 12vw 12vw 12vw 40vw;
+  }
+
+  .pengelolaanlimbahdanmaterial {
+    grid-template:
+      ". . .  carousel" 12vw
+      ". . .  carousel" 12vw
+      ". . . .         " 12vw
+      "keterangan . . ." 12vw / 12vw 12vw 12vw 40vw;
+  }
+
+  .pengelolaanbangunantingkatlanjut {
+    grid-template:
+      "carousel carousel carousel carousel2" 12vw
+      "carousel carousel carousel carousel2" 12vw
+      ". . . . " 12vw
+      ". . . ." 12vw / 12vw 12vw 12vw 40vw;
+  }
+
+  /* SIDEBAR */
+  /* SIDEBAR */
+  .sidebar {
+    grid-template-rows: repeat(17, 1fr);
+  }
+
+  .sidebar .menu span {
+    font-size: 0.7em;
+  }
+
+  /* CIRCULAR */
+  /* CIRCULAR */
+  .circularCaption {
+    font-size: 0.7em;
+  }
+
+  /* NUMBER */
+  /* NUMBER */
+  .numberCaption {
+    font-size: 0.8em;
+  }
+
+  .numberValue {
+    font-size: 2.7em;
+  }
+
+  /* MAP */
+  /* MAP */
+  .mapTitle {
+    font-size: 0.8em;
+  }
+
+  .legend {
+    font-size: 0.8em;
+    line-height: 1.7em;
+  }
+
+  /* CHART */
+  .chartjs-size-monitor,
+  .chartjs-size-monitor-expand,
+  .chartjs-size-monitor-shrink {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* ************************* */
+/* MEDIA QUERY FOR 4k LAPTOP */
+/*          2560px           */
+@media only screen and (min-width: 2560px) {
+  body {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+
+  /* CONTENT GRID */
+  /* CONTENT GRID */
+  .title {
+    height: 15vh;
+    font-size: 2.5em;
+  }
+
+  .grid-container {
+    height: 75vh;
+  }
+
+  .tatalahantepatguna {
+    grid-template:
+      ".   .   .   .   carousel  " 10.5vw
+      "map map map map carousel  " 10.5vw
+      "map map map map keterangan" 10.5vw / 10.5vw 10.5vw 10.5vw 10.5vw 36vw;
+  }
+
+  .pengelolaanair {
+    grid-template:
+      "chart chart chart chart carousel  " 10.5vw
+      "chart chart chart chart carousel  " 10.5vw
+      ".     .   button button keterangan" 10.5vw / 10.5vw 10.5vw 10.5vw 10.5vw 36vw;
+  }
+
+  .konservasienergi {
+    grid-template:
+      "chart chart chart chart carousel " 10.5vw
+      "chart chart chart chart carousel " 10.5vw
+      ".     .  button button keterangan" 10.5vw / 10.5vw 10.5vw 10.5vw 10.5vw 36vw;
+  }
+
+  .kesehatandankenyamanan {
+    grid-template:
+      ".   .   .   .   carousel  " 10.5vw
+      ".   .   .   .   carousel  " 10.5vw
+      ".   .   .   .   keterangan" 10.5vw / 10.5vw 10.5vw 10.5vw 10.5vw 36vw;
+  }
+
+  .pengelolaanlimbahdanmaterial {
+    grid-template:
+      ".   .   .   .   carousel  " 10.5vw
+      ".   .   .   .   carousel  " 10.5vw
+      ".   .   .   .   keterangan" 10.5vw / 10.5vw 10.5vw 10.5vw 10.5vw 36vw;
+  }
+
+  .pengelolaanbangunantingkatlanjut {
+    grid-template:
+      "carousel carousel carousel . carousel2" 10.5vw
+      "carousel carousel carousel . carousel2" 10.5vw
+      ".        .        .        . .        " 10.5vw / 10.5vw 10.5vw 10.5vw 10.5vw 36vw;
+  }
+
+  /* CONTAINER */
+  .neo {
+    border-radius: 40px;
+    box-shadow: 5px 10px 20px rgba(92, 99, 105, 0.2), -10px -15px 15px white;
+  }
+
+  .neoInset {
+    /* Display */
+    border-radius: 40px;
+
+    /* Color */
+    box-shadow: 5px 10px 20px rgba(92, 99, 105, 0.2) inset,
+      -10px -15px 15px white inset;
+  }
+
+  .neoSmall {
+    border-radius: 10px;
+    height: 70%;
+    width: 12.5%;
+    box-shadow: 7px 7px 10px rgba(92, 99, 105, 0.2), -5px -6px 10px white;
+  }
+
+  .popover-title {
+    font-size: 1.5em;
+  }
+
+  .popover-content {
+    font-size: 1.2em;
+  }
+
+  /* SIDEBAR */
+  /* SIDEBAR */
+  .sidebar {
+    /* Display */
+    grid-template-rows: repeat(14, 1fr);
+  }
+
+  .sidebar .menu span {
+    font-size: 1em;
+    width: 13vw;
+  }
+
+  /* CIRCULAR */
+  /* CIRCULAR */
+  .circularCaption {
+    font-size: 1.2em;
+  }
+
+  /* NUMBER */
+  /* NUMBER */
+  .numberCaption {
+    font-size: 1.2em;
+  }
+
+  /* CAROUSEL */
+  /* CAROUSEL */
+  .neoCarousel {
+    border-radius: 40px;
+    box-shadow: 5px 10px 20px rgba(92, 99, 105, 0.2), -10px -15px 15px white;
+  }
+
+  .carousel-img {
+    border-radius: 40px;
+  }
+
+  /* MAP */
+  /* MAP */
+  .mapTitle {
+    font-size: 1.5em;
+  }
+
+  .legend {
+    font-size: 1em;
+    line-height: 2em;
+  }
+
+  /* KETERANGAN */
+  /* KETERANGAN */
+  .keterangan {
+    width: 50%;
+  }
+
+  /* CHART */
+  .chartjs-size-monitor,
+  .chartjs-size-monitor-expand,
+  .chartjs-size-monitor-shrink {
+    height: 100%;
+    width: 100%;
+  }
 }

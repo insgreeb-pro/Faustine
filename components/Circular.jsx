@@ -2,12 +2,11 @@ import { CircularProgressbar } from "react-circular-progressbar"
 import { Container } from "../components/Container"
 import InfoTooltip from "../components/InfoTooltip"
 
-export default ({ title, ukuran, value, minV, maxV, thld, unit, info }) => {
+export default ({ title, value, minV, maxV, thld, unit, info }) => {
   const background = value < thld ? "#F29393" : "#93F293"
-  const ukuran1 = `${ukuran}`
 
   return (
-    <Container bg={background} ukuran={ukuran1}>
+    <Container bg={background}>
       <CircularProgressbar
         value={value}
         minValue={minV}

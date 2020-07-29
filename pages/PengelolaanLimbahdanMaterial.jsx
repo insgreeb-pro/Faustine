@@ -50,7 +50,7 @@ export default () => (
 
     <Sidebar activePage={title} />
 
-    <GridContent title={title}>
+    <GridContent title={title} kelas="pengelolaanlimbahdanmaterial">
       <Number
         title="Nilai ODP"
         ukuran="1/1/span 1/span 1"

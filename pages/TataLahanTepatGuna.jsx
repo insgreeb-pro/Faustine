@@ -43,11 +43,10 @@ export default () => (
     <Sidebar activePage={title} />
 
     {/* Menyusun konten dalam suatu grid*/}
-    <GridContent title={title}>
+    <GridContent title={title} kelas="tatalahantepatguna">
       {/* Digunakan untuk membuat konten seperti dashboard speedometer*/}
       <Circular
         title="Rasio RTH" //Judul untuk konten
-        ukuran="1/1/span 1/span 1" //Ukuran konten menggunakan gridArea
         value="59" //Nilai (Rasio RTH)
         minV="0" //Nilai minimal (Rasio RTH)
         maxV="100" //Nilai maksimal (Rasio RTH)
@@ -58,7 +57,6 @@ export default () => (
 
       <Circular
         title="Rasio Green Roof"
-        ukuran="1/2/span 1/span 1" //Ukuran konten menggunakan gridArea
         value="30"
         minV="0"
         maxV="100"
@@ -70,7 +68,6 @@ export default () => (
       {/* Digunakan untuk membuat konten yang memiliki nilai dan satuan tertentu */}
       <Number
         title="Albedo rata-rata" //Judul untuk konten
-        ukuran="1/3/span 1/span 1" //Ukuran konten menggunakan gridArea
         value="0.5" //Nilai (Albedo rata-rata)
         thld="0.3" //Batas nilai (Albedo rata-rata) yang masih dianggap bagus. Kotak akan berwarna hijau apabila Nilai Rasio RTH berada diatas batas nilai, dan merah sebaliknya.
         info="Albedo merupakan sebuah besaran yang menggambarkan perbandingan antara sinar Matahari yang tiba di permukaan bumi dan yang dipantulkan kembali ke angkasa" //Informasi lebih lanjut mengenai Rasio RTH
@@ -78,7 +75,6 @@ export default () => (
 
       <Number
         title="Jumlah kantong sepeda"
-        ukuran="1/4/span 1/span 1"
         value="20"
         info="Jumlah kantong sepeda yang tersedia di sekitar Gedung Departemen Teknik Nuklir dan Teknik Fisika"
       >

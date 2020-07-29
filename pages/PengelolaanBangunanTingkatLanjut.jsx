@@ -45,7 +45,7 @@ export default () => (
     <Sidebar activePage={title} />
 
     {/* Menyusun konten dalam suatu grid*/}
-    <GridContent title={title}>
+    <GridContent title={title} kelas="pengelolaanbangunantingkatlanjut">
       <Carousel slides={slides} />
     </GridContent>
   </>

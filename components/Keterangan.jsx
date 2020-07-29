@@ -6,23 +6,19 @@ export default () => {
   ]
 
   return (
-    <div
-      style={{
-        height: "100%",
-        width: "50%",
-        justifySelf: "end",
-        fontSize: "1.3em",
-        gridArea: "3/5/span 1/span 1",
-      }}
-    >
-      <div style={{ fontWeight: "bold", marginBottom: "3%" }}>Keterangan</div>
+    <div className="keterangan">
+      <div
+        style={{ fontWeight: "bold", fontSize: "1.2em", marginBottom: "3%" }}
+      >
+        Keterangan
+      </div>
       {containerStyles.map(({ bg, ket }) => (
         <div
           key={`${bg}`}
           style={{ display: "flex", alignItems: "center", height: "30%" }}
         >
           <div className="neoSmall" style={{ backgroundColor: `${bg}` }}></div>
-          <span>{ket}</span>
+          <span style={{ fontSize: "1.1em" }}>{ket}</span>
         </div>
       ))}
     </div>

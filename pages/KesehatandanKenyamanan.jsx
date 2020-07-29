@@ -41,10 +41,9 @@ export default () => (
 
     <Sidebar activePage={title} />
 
-    <GridContent title={title}>
+    <GridContent title={title} kelas="kesehatandankenyamanan">
       <Number
         title="Kadar CO2"
-        ukuran="1/1/span 1/span 1"
         value="703"
         unit="ppm"
         thld="100" //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
@@ -53,7 +52,6 @@ export default () => (
 
       <Number
         title="Kadar debu"
-        ukuran="1/2/span 1/span 1"
         value="0.15"
         unit="mg/m3"
         thld="0.1" //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
@@ -62,16 +60,14 @@ export default () => (
 
       <Number
         title="Suhu rata-rata"
-        ukuran="1/3/span 1/span 1"
         value="30"
-        unit="C"
+        unit={`\u00b0C`}
         thld="25" // YANG INI AGA ANEH, DIA PAKE RANGE GITUU
         info="Can you champion this marketing computer development html roi feedback team website technologically savvy for throughput this is not the hill i want to die on first-order optimal strategies pass the mayo, appeal to the client, sue the vice president ."
       />
 
       <Number
         title="Suhu rata-rata"
-        ukuran="1/4/span 1/span 1"
         value="62"
         unit="%"
         thld="25" // YANG INI AGA ANEH, DIA PAKE RANGE GITUU
@@ -80,7 +76,6 @@ export default () => (
 
       <Number
         title="Sound Transmission Class"
-        ukuran="2/1/span 1/span 1"
         value="50"
         thld="25" // YANG INI AGA ANEH, DIA PAKE RANGE GITUU
         info="Touch base that ipo will be a game-changer circle back around focus on the customer journey, or peel the onion nor circle back."
@@ -88,7 +83,6 @@ export default () => (
 
       <Number
         title="Kadar VOC"
-        ukuran="2/2/span 1/span 1"
         value="0.3"
         thld="0.1" //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
         unit="ppm"
@@ -97,7 +91,6 @@ export default () => (
 
       <Number
         title="Jumlah kuman"
-        ukuran="3/2/span 1/span 1"
         value="700"
         thld="100" //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
         unit="kol/m3"
@@ -106,7 +99,6 @@ export default () => (
 
       <Circular
         title="Kepuasan pengguna gedung"
-        ukuran="3/1/span 1/span 1"
         value="4.5"
         minV="0"
         maxV="5"

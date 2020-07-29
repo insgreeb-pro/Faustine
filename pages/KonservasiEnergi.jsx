@@ -50,10 +50,10 @@ export default () => (
 
     <Sidebar activePage={title} />
 
-    <GridContent title={title}>
-      <Container ukuran="1/1/span 2/span 4">
+    <GridContent title={title} kelas="konservasienergi">
+      <div style={{ gridArea: "chart" }} className="neo">
         <Cobachart />
-      </Container>
+      </div>
 
       <Circular
         title="Energi terbarukan yang dihasilkan"

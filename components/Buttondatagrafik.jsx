@@ -7,7 +7,7 @@ export default () => {
     <Link href={`/index`}>
       <Button
         variant="secondary"
-        style={{ gridArea: "3/3/span 1/ span 2", alignSelf: "start" }}
+        style={{ gridArea: "button", alignSelf: "start" }}
         block
       >
         Pusat data grafik <FaArrowRight />

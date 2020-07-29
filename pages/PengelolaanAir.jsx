@@ -8,8 +8,7 @@ import Keterangan from "../components/Keterangan"
 import Buttondatagrafik from "../components/Buttondatagrafik"
 import { FaStar } from "react-icons/fa"
 
-import { Container } from "../components/Container"
-import Cobachart from "../components/sementara chart/cobachart"
+import StackedBarChart from "../components/StackedBarChart"
 
 // Judul halaman web
 const title = "Pengelolaan Air"
@@ -50,14 +49,11 @@ export default () => (
 
     <Sidebar activePage={title} />
 
-    <GridContent title={title}>
-      <Container ukuran="1/1/span 2/span 4">
-        <Cobachart />
-      </Container>
+    <GridContent title={title} kelas="pengelolaanair">
+      <StackedBarChart />
 
       <Circular
         title="Persentase keran auto-stop"
-        ukuran="3/1/span 1/span 1"
         value="52"
         minV="0"
         maxV="100"
@@ -68,7 +64,6 @@ export default () => (
 
       <Number
         title="Rata-rata WELS rating keran bangunan"
-        ukuran="3/2/span 1/span 1"
         value="5.3"
         thld="0.3"
         info="Sorry i was triple muted manage expectations we're ahead of the one where do we stand on the latest client ask who's responsible for the ask for this request?."
@@ -77,7 +72,9 @@ export default () => (
       </Number>
 
       <Carousel slides={slides} />
+
       <Buttondatagrafik />
+
       <Keterangan />
     </GridContent>
   </>
