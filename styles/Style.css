@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  user-select: none;
 }
 
 body {
@@ -186,6 +185,9 @@ body {
   background-color: #ffffff;
   box-shadow: 5px 0px 15px rgba(92, 99, 105, 0.15);
 
+  /* text selection */
+  user-select: none;
+
   /* Transition */
   overflow: hidden;
   transition: width 0.4s ease-in-out;
@@ -352,129 +354,18 @@ body {
 /*          1440px          */
 @media only screen and (min-width: 1440px) {
   body {
-    font-size: 1.2rem;
-    line-height: 1.2rem;
-  }
-
-  /* CONTENT GRID */
-  /* CONTENT GRID */
-
-  .title {
-    font-size: 1.5em;
-  }
-
-  .tatalahantepatguna {
-    grid-template:
-      ". . .       carousel" 12vw
-      ". . .       carousel" 12vw
-      ". .          map map" 12vw
-      ". keterangan map map" 12vw / 12vw 12vw 12vw 40vw;
-  }
-
-  .pengelolaanair {
-    grid-template:
-      ". . . carousel" 12vw
-      ". . . carousel" 12vw
-      ". button chart chart" 12vw
-      ". keterangan  chart chart" 12vw / 12vw 12vw 12vw 40vw;
-  }
-
-  .konservasienergi {
-    grid-template:
-      ". . .          carousel" 12vw
-      ". . .          carousel" 12vw
-      ".    button chart chart" 12vw
-      ". keterangan chart chart" 12vw / 12vw 12vw 12vw 40vw;
-  }
-
-  .kesehatandankenyamanan {
-    grid-template:
-      ". . .   carousel" 12vw
-      ". . .   carousel" 12vw
-      ". . . .         " 12vw
-      "keterangan . . ." 12vw / 12vw 12vw 12vw 40vw;
-  }
-
-  .pengelolaanlimbahdanmaterial {
-    grid-template:
-      ". . .  carousel" 12vw
-      ". . .  carousel" 12vw
-      ". . . .         " 12vw
-      "keterangan . . ." 12vw / 12vw 12vw 12vw 40vw;
-  }
-
-  .pengelolaanbangunantingkatlanjut {
-    grid-template:
-      "carousel carousel carousel carousel2" 12vw
-      "carousel carousel carousel carousel2" 12vw
-      ". . . . " 12vw
-      ". . . ." 12vw / 12vw 12vw 12vw 40vw;
-  }
-
-  /* SIDEBAR */
-  /* SIDEBAR */
-  .sidebar {
-    grid-template-rows: repeat(17, 1fr);
-  }
-
-  .sidebar .menu span {
-    font-size: 0.7em;
-  }
-
-  /* CIRCULAR */
-  /* CIRCULAR */
-  .circularCaption {
-    font-size: 0.7em;
-  }
-
-  /* NUMBER */
-  /* NUMBER */
-  .numberCaption {
-    font-size: 0.8em;
-  }
-
-  .numberValue {
-    font-size: 2.7em;
-  }
-
-  /* MAP */
-  /* MAP */
-  .mapTitle {
-    font-size: 0.8em;
-  }
-
-  .legend {
-    font-size: 0.8em;
-    line-height: 1.7em;
-  }
-
-  /* CHART */
-  .chartjs-size-monitor,
-  .chartjs-size-monitor-expand,
-  .chartjs-size-monitor-shrink {
-    height: 100%;
-    width: 100%;
-  }
-}
-
-/* ************************* */
-/* MEDIA QUERY FOR 4k LAPTOP */
-/*          2560px           */
-@media only screen and (min-width: 2560px) {
-  body {
-    font-size: 1.2rem;
-    line-height: 1.2rem;
+    font-size: 1rem;
+    line-height: 1rem;
   }
 
   /* CONTENT GRID */
   /* CONTENT GRID */
   .title {
-    height: 15vh;
-    font-size: 2.5em;
+    font-size: 1.8em;
   }
 
   .grid-container {
-    height: 75vh;
+    height: 80vh;
   }
 
   .tatalahantepatguna {
@@ -514,8 +405,8 @@ body {
 
   .pengelolaanbangunantingkatlanjut {
     grid-template:
-      "carousel carousel carousel . carousel2" 10.5vw
-      "carousel carousel carousel . carousel2" 10.5vw
+      "carousel carousel carousel carousel carousel2" 10.5vw
+      "carousel carousel carousel carousel carousel2" 10.5vw
       ".        .        .        . .        " 10.5vw / 10.5vw 10.5vw 10.5vw 10.5vw 36vw;
   }
 
@@ -542,11 +433,11 @@ body {
   }
 
   .popover-title {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .popover-content {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   /* SIDEBAR */
@@ -564,7 +455,7 @@ body {
   /* CIRCULAR */
   /* CIRCULAR */
   .circularCaption {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   /* NUMBER */
@@ -574,7 +465,7 @@ body {
   }
 
   .numberCaption {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   /* CAROUSEL */
@@ -586,12 +477,6 @@ body {
 
   .carousel-img {
     border-radius: 40px;
-  }
-
-  /* MAP */
-  /* MAP */
-  .mapTitle {
-    font-size: 1.5em;
   }
 
   .legend {

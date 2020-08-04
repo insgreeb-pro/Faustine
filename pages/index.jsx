@@ -19,7 +19,7 @@ const styles = {
 
 const heading = {
   width: "80%",
-  fontSize: "3em",
+  fontSize: "2.5em",
   lineHeight: "1em",
   fontWeight: "700",
   textAlign: "center",
@@ -29,7 +29,7 @@ const heading = {
 }
 
 const caption = {
-  fontSize: "1.5em",
+  fontSize: "1em",
   fontWeight: "500",
   textAlign: "center",
   lineHeight: "1.5em",

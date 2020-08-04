@@ -1,9 +1,11 @@
-// import { div } from "../components/div"
 import Carousel from "react-bootstrap/Carousel"
 
-export default ({ slides }) => {
+export default ({ slides, area }) => {
+  const gridarea = `${area}` == "undefined" ? "carousel" : `${area}`
+  console.log(gridarea)
+
   return (
-    <div style={{ gridArea: "carousel" }} className="neoCarousel">
+    <div style={{ gridArea: gridarea }} className="neoCarousel">
       <Carousel
         fade
         style={{
