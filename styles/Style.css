@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  user-select: none;
 }
 
 body {
@@ -23,7 +24,7 @@ body {
   background: linear-gradient(135deg, #ffffff, #dce6ed);
   color: #f0f293;
   color: #232323;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 /* CONTENT GRID */
@@ -225,7 +226,7 @@ body {
 
 .sidebar .menu:hover {
   background: aquamarine;
-  color: gray;
+  color: slategray;
 }
 
 /* CIRCULAR */
@@ -568,6 +569,10 @@ body {
 
   /* NUMBER */
   /* NUMBER */
+  .numberValue {
+    font-size: 4em;
+  }
+
   .numberCaption {
     font-size: 1.2em;
   }

@@ -1,16 +1,42 @@
-import Link from "next/link"
 import Head from "next/head"
-import { FaBicycle } from "react-icons/fa"
-import Sidebar from "../components/Sidebar"
-import GridContent from "../components/GridContent"
-import Circular from "../components/Circular"
-import Number from "../components/Number"
-import Carousel from "../components/Carousel"
-import Map from "../components/Map"
-import Keterangan from "../components/Keterangan"
-import { Container } from "../components/Container"
+import Button from "../components/Button"
 
 const title = "Home"
+
+const styles = {
+  height: "100vh",
+  width: "100vw",
+  padding: "0 20%",
+  display: "flex",
+  flexDirection: "column",
+  textAlign: "center",
+  alignItems: "center",
+  alignContent: "center",
+  justifyContent: "center",
+  background: "url(/img/gedungdtntf.jpg) no-repeat center center fixed",
+  backgroundSize: "cover",
+}
+
+const heading = {
+  width: "80%",
+  fontSize: "3em",
+  lineHeight: "1em",
+  fontWeight: "700",
+  textAlign: "center",
+  whiteSpace: "normal",
+  color: "#232323",
+  marginBottom: "1%",
+}
+
+const caption = {
+  fontSize: "1.5em",
+  fontWeight: "500",
+  textAlign: "center",
+  lineHeight: "1.5em",
+  whiteSpace: "normal",
+  color: "#232323",
+  marginBottom: "2%",
+}
 
 export default () => (
   <>
@@ -18,23 +44,15 @@ export default () => (
       <title>{title}</title>
     </Head>
 
-    {/* Sidebar dengan halaman aktif (Tata Lahan Tepat Guna) */}
-    <Sidebar activePage={title} />
+    <div style={styles}>
+      <p style={heading}>GEDUNG DEPARTEMEN TEKNIK NUKLIR TEKNIK FISIKA</p>
+      <p style={caption}>
+        Departemen Teknik Nuklir dan Teknik Fisika merupakan salah satu
+        departemen di Fakultas Teknik Universitas Gadjah Mada yang berlokasi di
+        Jalan Grafika 2, Yogyakarta 55281, Indonesia
+      </p>
 
-    {/* Menyusun konten dalam suatu grid*/}
-    <GridContent title={title}>
-      <Container ukuran="1/1/span 1/span 1">BING BONG</Container>
-      <Container ukuran="1/2/span 1/span 1">BING BONG</Container>
-      <Container ukuran="1/3/span 1/span 1">BING BONG</Container>
-      <Container ukuran="1/4/span 1/span 1">BING BONG</Container>
-      <Container ukuran="1/5/span 1/span 1">BING BONG</Container>
-      <Container ukuran="2/1/span 1/span 1">BING BONG</Container>
-      <Container ukuran="2/2/span 1/span 1">BING BONG</Container>
-      <Container ukuran="2/3/span 1/span 1">BING BONG</Container>
-      <Container ukuran="2/4/span 1/span 1">BING BONG</Container>
-      <Container ukuran="2/5/span 1/span 1">BING BONG</Container>
-      <Container ukuran="3/1/span 1/span 1">BING BONG</Container>
-      <Container ukuran="3/2/span 1/span 1">BING bingSIT</Container>
-    </GridContent>
+      <Button />
+    </div>
   </>
 )

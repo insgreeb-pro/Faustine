@@ -14,22 +14,58 @@ const title = "Kesehatan dan Kenyamanan"
 // Isi slideshow
 const slides = [
   {
-    source: "tatalahan1.jpg",
-    judul: "Komitmen Penanganan Racun",
+    source: "kesehatankenyamanan1.jpg",
+    judul: "Kebijakan Dilarang Merokok",
     isi:
-      "Productize quick-win for the horse is out of the barn yet target rich environment that's not on the roadmap.",
+      "I got your invoice...it seems really high, why did you charge so much we need to make the new version clean and sexy",
   },
   {
-    source: "tatalahan2.jpg",
-    judul: "Low Impact Development",
+    source: "kesehatankenyamanan2.jpg",
+    judul: "Ventilasi dengan Filter",
     isi:
-      "Turd polishing. But what's the real problem we're trying to solve here?",
+      "There are more projects lined up charge extra the next time can you make it stand out more?",
   },
   {
-    source: "tatalahan3.jpg",
-    judul: "Peningkatan Kualitas Hidup",
+    source: "kesehatankenyamanan3.jpg",
+    judul: "Audit IAQ",
     isi:
-      "Cross-pollination organic growth, or hit the ground running quantity accountable talk",
+      "There is too much white space can we try some other colours maybe doing some work for us 'pro bono' will really add to your portfolio i promise you might wanna give it another shot.",
+  },
+  {
+    source: "kesehatankenyamanan4.jpg",
+    judul: "Konsentrasi Gas Pencemar",
+    isi:
+      "There are more projects lined up charge extra the next time can you make it stand out more?",
+  },
+  {
+    source: "kesehatankenyamanan5.jpg",
+    judul: "Tingkat Pencahayaan Sesuai Standar",
+    isi:
+      "We exceed the clients' expectations can you make it pop make it pop so it's great, can you add a beard though nor can you pimp this powerpoint.",
+  },
+  {
+    source: "kesehatankenyamanan6.jpg",
+    judul: "Lampu Tiga tingkat",
+    isi:
+      "I know you've made thirty iterations but can we go back to the first one that was the best version the target audience is makes and famles",
+  },
+  {
+    source: "kesehatankenyamanan7.jpg",
+    judul: "Minimalisir Getaran",
+    isi:
+      "Submit your meaningless business jargon to be used on the site! thanks for taking the time to make the website,",
+  },
+  {
+    source: "kesehatankenyamanan8.jpg",
+    judul: "Pembasmian Hama",
+    isi:
+      "I really think this could go viral, for try a more powerful colour, for in an ideal world. Make it pop the flier should feel like a warm handshake.",
+  },
+  {
+    source: "kesehatankenyamanan9.jpg",
+    judul: "Kebersihan Gedung",
+    isi:
+      "Can you make the logo bigger yes bigger bigger still the logo is too big we have big contacts we will promote you,",
   },
 ]
 
