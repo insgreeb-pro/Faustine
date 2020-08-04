@@ -1,0 +1,17 @@
+import Link from "next/link"
+import Button from "react-bootstrap/Button"
+import { FaArrowRight } from "react-icons/fa"
+
+export default () => {
+  return (
+    <Link href={`/index`}>
+      <Button
+        variant="secondary"
+        style={{ gridArea: "button", alignSelf: "start" }}
+        block
+      >
+        Pusat data grafik <FaArrowRight />
+      </Button>
+    </Link>
+  )
+}
