@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa"
 
 export default () => {
   return (
-    <Link href={`/index`}>
+    <Link href={`/TataLahanTepatGuna`}>
       <Button
         variant="secondary"
         style={{ gridArea: "button", alignSelf: "start" }}

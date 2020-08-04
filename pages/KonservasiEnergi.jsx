@@ -17,28 +17,34 @@ const title = "Konservasi Energi"
 // Isi slideshow
 const slides = [
   {
-    source: "pengelolaanair1.jpg",
-    judul: "Desain Minimalisir Pengunaan Air",
+    source: "konservasienergi1.jpg",
+    judul: "Penghematan Konsumsi Energi untuk Pencahayaan",
     isi:
-      "Synergestic actionables i need to pee and then go to another meeting per my previous email but sorry i was triple muted. Gain traction strategic high-level 30,000 ft view looks great",
+      "Synergestic actionables i need to pee and then go to another meeting per my previous email.",
   },
   {
-    source: "pengelolaanair2.jpg",
-    judul: "Sistem Filter Air Terstandar",
+    source: "konservasienergi2.jpg",
+    judul: "Menggunakan Ballast Frekuensi Tinggi/LED",
     isi:
       "Turd polishing. But what's the real problem we're trying to solve here?",
   },
   {
-    source: "pengelolaanair3.jpg",
-    judul: "Sistem Daur Ulang Air",
+    source: "konservasienergi3.jpg",
+    judul: "Efisiensi Sistem Pendingin",
     isi:
       "Drive awareness to increase engagement put it on the parking lot synergize productive mindfulness drop-dead date, nor poop, yet optimize for search",
   },
   {
-    source: "pengelolaanair4.jpg",
-    judul: "Hasil Uji Laboratorium",
+    source: "konservasienergi4.jpg",
+    judul: "Panduan Pengoperasian dan Pemeliharaan AC",
     isi:
-      "Out of the loop can we parallel path get all your ducks in a row time to open the kimono.",
+      "That's great, but can you make it work for ie 2 please could you solutionize that for me, but mmm, exactly like that, but different",
+  },
+  {
+    source: "konservasienergi5.jpg",
+    judul: "Teknologi Fotovoltaik",
+    isi:
+      "Try to make everything bigger, so you can get my logo from facebook. Can you make the font bigger?",
   },
 ]
 

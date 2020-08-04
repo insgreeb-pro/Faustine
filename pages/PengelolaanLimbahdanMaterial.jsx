@@ -17,26 +17,38 @@ const title = "Pengelolaan Limbah dan Material"
 // Isi slideshow
 const slides = [
   {
-    source: "pengelolaanair1.jpg",
-    judul: "Desain Minimalisir Pengunaan Air",
+    source: "pengelolaanlimbah1.jpg",
+    judul: "Material Ramah Lingkungan",
     isi:
-      "Synergestic actionables i need to pee and then go to another meeting per my previous email but sorry i was triple muted. Gain traction strategic high-level 30,000 ft view looks great",
+      "I think this should be fairly easy so if you just want to have a look we exceed the clients' expectations is this the best we can do it looks a bit empty, try to make everything bigger",
   },
   {
-    source: "pengelolaanair2.jpg",
-    judul: "Sistem Filter Air Terstandar",
+    source: "pengelolaanlimbah2.jpg",
+    judul: "Lampu Rendah Merkuri",
     isi:
       "Turd polishing. But what's the real problem we're trying to solve here?",
   },
   {
-    source: "pengelolaanair3.jpg",
-    judul: "Sistem Daur Ulang Air",
+    source: "pengelolaanlimbah3.jpg",
+    judul: "Tempat Sampah terpisah",
     isi:
       "Drive awareness to increase engagement put it on the parking lot synergize productive mindfulness drop-dead date, nor poop, yet optimize for search",
   },
   {
-    source: "pengelolaanair4.jpg",
-    judul: "Hasil Uji Laboratorium",
+    source: "pengelolaanlimbah4.jpg",
+    judul: "Prosedur Daur Ulang",
+    isi:
+      "Out of the loop can we parallel path get all your ducks in a row time to open the kimono.",
+  },
+  {
+    source: "pengelolaanlimbah5.jpg",
+    judul: "Pengurangan Kemasan Plastik",
+    isi:
+      "Out of the loop can we parallel path get all your ducks in a row time to open the kimono.",
+  },
+  {
+    source: "pengelolaanlimbah6.jpg",
+    judul: "Pengelolaan Limbah Hasil Renovasi",
     isi:
       "Out of the loop can we parallel path get all your ducks in a row time to open the kimono.",
   },
