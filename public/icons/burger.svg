@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="44" height="24" viewBox="0 0 44 24">
-  <g id="Burger" transform="translate(2 2)">
-    <path id="Path_17" data-name="Path 17" d="M0,.069H33.5" transform="translate(3 -0.069)" fill="none" stroke="#555" stroke-linecap="round" stroke-width="4"/>
-    <path id="Path_18" data-name="Path 18" d="M0,.069H40" transform="translate(0 9.931)" fill="none" stroke="#555" stroke-linecap="round" stroke-width="4"/>
-    <path id="Path_19" data-name="Path 19" d="M0,.069H33.5" transform="translate(3 19.931)" fill="none" stroke="#555" stroke-linecap="round" stroke-width="4"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="24" viewBox="0 0 44 24"><g id="Burger" transform="translate(2 2)"><path id="Path_17" fill="none" stroke="#555" stroke-linecap="round" stroke-width="4" d="M0,.069H33.5" data-name="Path 17" transform="translate(3 -0.069)"/><path id="Path_18" fill="none" stroke="#555" stroke-linecap="round" stroke-width="4" d="M0,.069H40" data-name="Path 18" transform="translate(0 9.931)"/><path id="Path_19" fill="none" stroke="#555" stroke-linecap="round" stroke-width="4" d="M0,.069H33.5" data-name="Path 19" transform="translate(3 19.931)"/></g></svg>
