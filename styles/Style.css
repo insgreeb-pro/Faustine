@@ -15,7 +15,7 @@ body {
 
   /* Font */
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   line-height: 1em;
 
   /* Color */
@@ -48,7 +48,7 @@ body {
 }
 
 .grid-container {
-  height: 85vh;
+  height: 90vh;
   display: grid;
   justify-content: space-between;
   align-content: space-between;
@@ -60,31 +60,24 @@ body {
   grid-template:
     "map map map map carousel" 10vw
     "map map map map carousel" 10vw
-    ". . . . ." 10vw
+    "map map map map ." 10vw
     "keterangan . . . ." 10vw/10vw 10vw 10vw 10vw 40vw;
 }
 
 .pengelolaanair {
-  /* jangan lupa dihapus kalo ga dipake */
-  grid-template:
-    ". . . .               carousel" 10vw
-    ". . . .               carousel" 10vw
-    "button .     chart chart chart" 10vw
-    "keterangan . chart chart chart" 10vw / 10vw 10vw 10vw 10vw 40vw;
-
   grid-template:
     "chart chart chart chart carousel" 10vw
     "chart chart chart chart carousel" 10vw
-    "button . . . ." 10vw
-    "keterangan . . . ." 10vw / 10vw 10vw 10vw 10vw 40vw;
+    "chart chart chart chart ." 10vw
+    "keterangan button . . ." 10vw / 10vw 10vw 10vw 10vw 40vw;
 }
 
 .konservasienergi {
   grid-template:
     "chart chart chart chart carousel" 10vw
     "chart chart chart chart carousel" 10vw
-    "button . . . ." 10vw
-    "keterangan . . . ." 10vw / 10vw 10vw 10vw 10vw 40vw;
+    "chart chart chart chart ." 10vw
+    "keterangan button . . ." 10vw / 10vw 10vw 10vw 10vw 40vw;
 }
 
 .kesehatandankenyamanan {
