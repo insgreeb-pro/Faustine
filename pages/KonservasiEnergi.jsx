@@ -6,8 +6,6 @@ import Number from "../components/Number"
 import Carousel from "../components/Carousel"
 import Keterangan from "../components/Keterangan"
 import Buttondatagrafik from "../components/Buttondatagrafik"
-
-import StackedBarChart from "../components/StackedBarChart"
 import LineChart from "../components/LineChart"
 
 // Judul halaman web

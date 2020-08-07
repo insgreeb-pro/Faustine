@@ -354,8 +354,8 @@ body {
 /*          1440px          */
 @media only screen and (min-width: 1440px) {
   body {
-    font-size: 1.3rem;
-    line-height: 1.3rem;
+    font-size: 1rem;
+    line-height: 1rem;
   }
 
   /* CONTENT GRID */
