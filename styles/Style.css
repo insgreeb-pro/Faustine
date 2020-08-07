@@ -330,7 +330,7 @@ body {
 /* KETERANGAN */
 .keterangan {
   height: 100%;
-  width: 100%;
+  width: 50%;
   justify-self: end;
   grid-area: keterangan;
 }
@@ -435,12 +435,6 @@ body {
   .legend {
     font-size: 1em;
     line-height: 2em;
-  }
-
-  /* KETERANGAN */
-  /* KETERANGAN */
-  .keterangan {
-    width: 50%;
   }
 
   /* CHART */
