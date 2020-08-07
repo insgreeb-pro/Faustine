@@ -60,7 +60,7 @@ const options = {
 
 export default () => {
   return (
-    <div style={{ gridArea: "chart", padding: "10%" }} className="neo">
+    <div style={{ gridArea: "chart", padding: "3%" }} className="neo">
       <p class="mapTitle">Indeks Konsumsi Energi Bangunan</p>
       <Line data={data} options={options} />
     </div>

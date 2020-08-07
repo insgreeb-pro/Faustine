@@ -90,7 +90,7 @@ const options = {
 export default () => {
   //   const displayName = "DoughnutExample"
   return (
-    <div style={{ gridArea: "chart", padding: "10%" }} className="neo">
+    <div style={{ gridArea: "chart", padding: "3%" }} className="neo">
       <p class="mapTitle">Konsumsi Air Bangunan</p>
       <Bar data={data} options={options} />
     </div>
