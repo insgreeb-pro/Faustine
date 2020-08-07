@@ -39,7 +39,7 @@ body {
   /* Display */
   display: flex;
   align-items: center;
-  height: 8xvh;
+  height: 8vh;
 
   /* Font */
   font-weight: 700;
@@ -356,6 +356,7 @@ body {
   /* CONTENT GRID */
   .title {
     font-size: 1.8em;
+    height: 10vh;
   }
 
   .grid-container {
