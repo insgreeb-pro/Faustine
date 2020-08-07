@@ -5,7 +5,7 @@ export default ({ icon, label, page, aktif }) => {
 
   return (
     <Link href={`/${page}`}>
-      <div className={kelas}>
+      <div className={kelas} style={{ cursor: "pointer" }}>
         {/* content */}
         {/* CONTENT */}
         <img className="logo" src={`/icons/sidebar/${icon}`} />

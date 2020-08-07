@@ -6,7 +6,12 @@ export default () => {
     <Link href={`/TataLahanTepatGuna`}>
       <Button
         variant="secondary"
-        style={{ alignSelf: "center", width: "15%", fontSize: "1.2em" }}
+        style={{
+          alignSelf: "center",
+          width: "15%",
+          fontSize: "1.2em",
+          cursor: "pointer",
+        }}
         block
       >
         BEMS

@@ -2,7 +2,6 @@ import Carousel from "react-bootstrap/Carousel"
 
 export default ({ slides, area }) => {
   const gridarea = `${area}` == "undefined" ? "carousel" : `${area}`
-  console.log(gridarea)
 
   return (
     <div style={{ gridArea: gridarea }} className="neoCarousel">

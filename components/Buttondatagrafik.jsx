@@ -7,7 +7,7 @@ export default () => {
     <Link href={`/TataLahanTepatGuna`}>
       <Button
         variant="secondary"
-        style={{ gridArea: "button", alignSelf: "start" }}
+        style={{ gridArea: "button", alignSelf: "start", cursor: "pointer" }}
         block
       >
         Pusat data grafik <FaArrowRight />

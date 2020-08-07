@@ -6,10 +6,9 @@ import Number from "../components/Number"
 import Carousel from "../components/Carousel"
 import Keterangan from "../components/Keterangan"
 import Buttondatagrafik from "../components/Buttondatagrafik"
-import { FaStar } from "react-icons/fa"
 
-import { Container } from "../components/Container"
-import Cobachart from "../components/sementara chart/cobachart"
+import StackedBarChart from "../components/StackedBarChart"
+import LineChart from "../components/LineChart"
 
 // Judul halaman web
 const title = "Konservasi Energi"
@@ -57,9 +56,7 @@ export default () => (
     <Sidebar activePage={title} />
 
     <GridContent title={title} kelas="konservasienergi">
-      <div style={{ gridArea: "chart" }} className="neo">
-        <Cobachart />
-      </div>
+      <LineChart />
 
       <Circular
         title="Energi terbarukan yang dihasilkan"
