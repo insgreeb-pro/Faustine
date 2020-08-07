@@ -58,10 +58,10 @@ body {
 
 .tatalahantepatguna {
   grid-template:
-    ". . .         carousel" 15vw
-    ". . .         carousel" 15vw
-    ".          map map map" 15vw
-    "keterangan map map map" 20vw / 15vw 15vw 15vw 40vw;
+    ". . . .       carousel" 10vw
+    ". . . .       carousel" 10vw
+    ". . . .        map map" 10vw
+    "keterangan . . map map" 20vw / 10vw 10vw 10vw 10vw 40vw;
 }
 
 .pengelolaanair {
