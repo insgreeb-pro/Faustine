@@ -54,7 +54,6 @@ export default () => (
         unit="%" //Satuan nilai
         info="Ruang Terbuka Hijau atau disingkat RTH adalah suatu bentuk pemanfaatan lahan pada satu kawasan yang diperuntukkan untuk penghijauan tanaman." //Informasi lebih lanjut mengenai Rasio RTH
       />
-
       <Circular
         title="Rasio Green Roof"
         value="30"
@@ -64,7 +63,6 @@ export default () => (
         unit="%"
         info="Green roof merupakan atap dari sebuah gedung yang sebagian/seluruhnya ditutupi vegetasi"
       />
-
       {/* Digunakan untuk membuat konten yang memiliki nilai dan satuan tertentu */}
       <Number
         title="Albedo rata-rata" //Judul untuk konten
@@ -72,7 +70,6 @@ export default () => (
         thld="0.3" //Batas nilai (Albedo rata-rata) yang masih dianggap bagus. Kotak akan berwarna hijau apabila Nilai Rasio RTH berada diatas batas nilai, dan merah sebaliknya.
         info="Albedo merupakan sebuah besaran yang menggambarkan perbandingan antara sinar Matahari yang tiba di permukaan bumi dan yang dipantulkan kembali ke angkasa" //Informasi lebih lanjut mengenai Rasio RTH
       />
-
       <Number
         title="Jumlah kantong sepeda"
         value="20"
@@ -81,11 +78,8 @@ export default () => (
         {/*Digunakan untuk satuan yang menggunakan icon (Font Awesome Bicycle)*/}
         <FaBicycle />
       </Number>
-
-      <Carousel slides={slides} />
-
+      <Carousel slides={slides}>*Upaya lain yang dilakukan</Carousel>
       <Map title="Denah fasilitas umum di sekitar Departemen Teknik Nuklir dan Teknik Fisika Universitas Gadjah Mada" />
-
       <Keterangan />
     </GridContent>
   </>

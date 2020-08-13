@@ -143,7 +143,7 @@ export default () => (
         info="Turn the crank offline this discussion draft policy ppml proposal yet closing these latest prospects is like putting socks on an octopus you better eat a reality sandwich before you walk back in that boardroom"
       />
 
-      <Carousel slides={slides} />
+      <Carousel slides={slides}>*Upaya lain yang dilakukan</Carousel>
 
       <Keterangan />
     </GridContent>

@@ -1,6 +1,6 @@
 import Carousel from "react-bootstrap/Carousel"
 
-export default ({ slides, area }) => {
+export default ({ slides, area, children }) => {
   const gridarea = `${area}` == "undefined" ? "carousel" : `${area}`
 
   return (
@@ -28,6 +28,7 @@ export default ({ slides, area }) => {
           </Carousel.Item>
         ))}
       </Carousel>
+      <p style={{ marginTop: "2%" }}>{children}</p>
     </div>
   )
 }

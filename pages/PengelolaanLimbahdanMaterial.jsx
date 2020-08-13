@@ -88,7 +88,7 @@ export default () => (
         info="Groom the backlog t-shaped individual helicopter view. Knowledge process outsourcing all hands on deck knowledge process outsourcing. T-shaped individual pro-sumer software."
       />
 
-      <Carousel slides={slides} />
+      <Carousel slides={slides}>*Upaya lain yang dilakukan</Carousel>
       <Keterangan />
     </GridContent>
   </>

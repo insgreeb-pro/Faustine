@@ -1,7 +1,7 @@
 export default () => {
   const containerStyles = [
     { bg: "#93F293", ket: "Baik" },
-    { bg: "#F0F293", ket: "Cukup Baik" },
+    // { bg: "#F0F293", ket: "Cukup Baik" },
     { bg: "#F29393", ket: "Buruk" },
   ]
 
@@ -21,6 +21,7 @@ export default () => {
           <span style={{ fontSize: "1.1em" }}>{ket}</span>
         </div>
       ))}
+      <p style={{ marginTop: "2%" }}>**berdasarkan standar yang ada</p>
     </div>
   )
 }

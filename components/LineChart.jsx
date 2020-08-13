@@ -2,20 +2,20 @@ import { Line } from "react-chartjs-2"
 
 const data = {
   labels: [
-    "1 Jun",
-    "2 Jun",
-    "3 Jun",
-    "4 Jun",
-    "5 Jun",
-    "6 Jun",
-    "7 Jun",
-    "8 Jun",
-    "9 Jun",
-    "10 Jun",
-    "11 Jun",
-    "12 Jun",
-    "13 Jun",
-    "14 Jun",
+    "Jan 19",
+    "Feb 19",
+    "Mar 19",
+    "Apr 19",
+    "May 19",
+    "Jun 19",
+    "Jul 19",
+    "Aug 19",
+    "Oct 19",
+    "Nov 19",
+    "Dec 19",
+    "Jan 20",
+    "Feb 20",
+    "Mar 20",
   ],
   datasets: [
     {
@@ -53,7 +53,7 @@ const options = {
     display: false,
   },
   scales: {
-    xAxes: [{ scaleLabel: { display: true, labelString: "Tanggal" } }],
+    xAxes: [{ scaleLabel: { display: true, labelString: "Bulan" } }],
     yAxes: [{ scaleLabel: { display: true, labelString: "IKE (kWh/m2)" } }],
   },
 }

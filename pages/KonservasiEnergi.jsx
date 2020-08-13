@@ -74,7 +74,7 @@ export default () => (
         info="Teams were able to drive adoption and awareness. Strategic high-level 30,000 ft view hire the best or strategic fit closing these latest prospects is like putting socks on an octopus touch base we've bootstrapped the model yet put a record on and see who dances."
       />
 
-      <Carousel slides={slides} />
+      <Carousel slides={slides}>*Upaya lain yang dilakukan</Carousel>
       <Buttondatagrafik />
       <Keterangan />
     </GridContent>

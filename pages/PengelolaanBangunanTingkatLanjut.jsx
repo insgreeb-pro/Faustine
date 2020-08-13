@@ -75,8 +75,10 @@ export default () => (
 
     {/* Menyusun konten dalam suatu grid*/}
     <GridContent title={title} kelas="pengelolaanbangunantingkatlanjut">
-      <Carousel slides={slides} />
-      <Carousel slides={slides2} area="carousel2" />
+      <Carousel slides={slides}>*Upaya lain yang dilakukan</Carousel>
+      <Carousel slides={slides2} area="carousel2">
+        **Upaya dalam bidang manajemen
+      </Carousel>
     </GridContent>
   </>
 )

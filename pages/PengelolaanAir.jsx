@@ -51,7 +51,6 @@ export default () => (
 
     <GridContent title={title} kelas="pengelolaanair">
       <StackedBarChart />
-
       <Circular
         title="Persentase keran auto-stop"
         value="52"
@@ -61,7 +60,6 @@ export default () => (
         unit="%"
         info="Spinning our wheels put a record on and see who dances 4-blocker, that's mint, well done. Create spaces to explore what’s next."
       />
-
       <Number
         title="Rata-rata WELS rating keran bangunan"
         value="5.3"
@@ -70,11 +68,8 @@ export default () => (
       >
         <FaStar style={{ verticalAlign: "initial" }} />
       </Number>
-
-      <Carousel slides={slides} />
-
+      <Carousel slides={slides}>*Upaya lain yang dilakukan</Carousel>
       <Buttondatagrafik />
-
       <Keterangan />
     </GridContent>
   </>
