@@ -311,6 +311,10 @@ body {
   object-fit: cover;
 }
 
+.carousel-caption {
+  text-shadow: 3px 2px 4px #232323;
+}
+
 .carousel-title {
   font-size: 2em;
 }
