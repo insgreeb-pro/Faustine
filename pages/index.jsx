@@ -24,8 +24,9 @@ const heading = {
   fontWeight: "700",
   textAlign: "center",
   whiteSpace: "normal",
-  color: "#232323",
+  color: "white",
   marginBottom: "1%",
+  textShadow: "2px 2px 6px #232323",
 }
 
 const caption = {
@@ -34,8 +35,9 @@ const caption = {
   textAlign: "center",
   lineHeight: "1.5em",
   whiteSpace: "normal",
-  color: "#232323",
+  color: "white",
   marginBottom: "2%",
+  textShadow: "2px 2px 6px #232323",
 }
 
 export default () => (
