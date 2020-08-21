@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  dashboard:
+    build: .
+    image: insgreeb-pro/Faustine
+    ports:
+      - 3315:3000
