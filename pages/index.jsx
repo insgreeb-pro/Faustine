@@ -49,9 +49,17 @@ export default () => (
     <div style={styles}>
       <p style={heading}>GEDUNG DEPARTEMEN TEKNIK NUKLIR TEKNIK FISIKA</p>
       <p style={caption}>
-        Departemen Teknik Nuklir dan Teknik Fisika merupakan salah satu
+        {/* Departemen Teknik Nuklir dan Teknik Fisika merupakan salah satu
         departemen di Fakultas Teknik Universitas Gadjah Mada yang berlokasi di
-        Jalan Grafika 2, Yogyakarta 55281, Indonesia
+        Jalan Grafika 2, Yogyakarta 55281, Indonesia */}
+        BEMS (Building Environment Monitoring System) merupakan suatu sistem
+        yang mengamati, mencatat, mengukur atau mendokumentasi beberapa
+        parameter seperti penggunaan energi, suhu, kelembaban, cahaya, dan
+        kualitas udara sebagai tolok ukur dalam suatu siklus waktu tertentu yang
+        mengacu pada Standar Nasional Indonesia (SNI). Sistem monitoring ini
+        bergungsi untuk memantau operasional data center dari gangguan
+        lingkungan dalam aspek kenyamanan. keamanan, kesehatan, dan
+        produktivitas penghuni juga dapat digunakan untuk manajemen bangunan.
       </p>
 
       <Button />
