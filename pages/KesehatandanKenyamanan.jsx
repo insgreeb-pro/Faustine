@@ -31,24 +31,24 @@ const slides = [
     isi:
       "There is too much white space can we try some other colours maybe doing some work for us 'pro bono' will really add to your portfolio i promise you might wanna give it another shot.",
   },
-  {
-    source: "kesehatankenyamanan4.jpg",
-    judul: "Konsentrasi Gas Pencemar",
-    isi:
-      "There are more projects lined up charge extra the next time can you make it stand out more?",
-  },
+  // {
+  //   source: "kesehatankenyamanan4.jpg",
+  //   judul: "Konsentrasi Gas Pencemar",
+  //   isi:
+  //     "There are more projects lined up charge extra the next time can you make it stand out more?",
+  // },
   {
     source: "kesehatankenyamanan5.jpg",
     judul: "Tingkat Pencahayaan Sesuai Standar",
     isi:
       "We exceed the clients' expectations can you make it pop make it pop so it's great, can you add a beard though nor can you pimp this powerpoint.",
   },
-  {
-    source: "kesehatankenyamanan6.jpg",
-    judul: "Lampu Tiga tingkat",
-    isi:
-      "I know you've made thirty iterations but can we go back to the first one that was the best version the target audience is makes and famles",
-  },
+  // {
+  //   source: "kesehatankenyamanan6.jpg",
+  //   judul: "Lampu Tiga tingkat",
+  //   isi:
+  //     "I know you've made thirty iterations but can we go back to the first one that was the best version the target audience is makes and famles",
+  // },
   {
     source: "kesehatankenyamanan7.jpg",
     judul: "Minimalisir Getaran",

@@ -5,7 +5,7 @@ export default ({ activePage }) => {
     {
       icon: "homepage.svg",
       label: "Home",
-      page: "index",
+      page: "",
     },
     {
       icon: "TataLahan.svg",
