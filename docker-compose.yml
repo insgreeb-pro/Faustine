@@ -7,7 +7,7 @@ services:
     volumes:
       - static:/app/out
   ui:
-    image: nginx
+    image: nginx:alpine
     depends_on:
       - dashboard
     volumes:
