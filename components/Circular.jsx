@@ -3,7 +3,7 @@ import { Container } from "../components/Container"
 import InfoTooltip from "../components/InfoTooltip"
 
 export default ({ title, value, minV, maxV, thld, unit, info }) => {
-  const background = value < thld ? "#F29393" : "#93F293"
+  const background = value < thld ? "#EF476F" : "#1EF9A5"
 
   return (
     <Container bg={background}>
@@ -17,7 +17,7 @@ export default ({ title, value, minV, maxV, thld, unit, info }) => {
         circleRatio={0.75}
         styles={{
           path: {
-            stroke: "#575757",
+            stroke: "#111",
             mixBlendMode: "color-burn",
             transform: "rotate(0.625turn)",
             transformOrigin: "center center",
@@ -29,7 +29,7 @@ export default ({ title, value, minV, maxV, thld, unit, info }) => {
             transformOrigin: "center center",
           },
           text: {
-            fill: "#232323",
+            fill: "#073b4c",
             fontSize: "18pt",
             fontWeight: "bold",
           },

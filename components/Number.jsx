@@ -3,7 +3,7 @@ import InfoTooltip from "../components/InfoTooltip"
 import { IconContext } from "react-icons"
 
 export default ({ title, value, thld, minV, maxV, unit, info, children }) => {
-  const background = thld ? (value < thld ? "#F29393" : "#93F293") : null
+  const background = thld ? (value < thld ? "#EF476F" : "#1EF9A5") : null
 
   return `${children}` == "undefined" ? (
     //biasa
@@ -23,7 +23,7 @@ export default ({ title, value, thld, minV, maxV, unit, info, children }) => {
         {value}
         <IconContext.Provider
           value={{
-            color: "#232323",
+            color: "#073b4c",
             size: "0.7em",
             style: { verticalAlign: "inherit" },
           }}

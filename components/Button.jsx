@@ -5,16 +5,18 @@ export default () => {
   return (
     <Link href={`/TataLahanTepatGuna`}>
       <Button
-        variant="secondary"
+        variant="danger"
         style={{
-          alignSelf: "center",
-          width: "15%",
+          width: "30%",
           fontSize: "1.2em",
           cursor: "pointer",
+          borderRadius: "30px",
+          backgroundColor: "#EF476F",
+          color: "F3EFF5",
         }}
         block
       >
-        BEMS
+        BEMS DTNTF UGM
       </Button>
     </Link>
   )
