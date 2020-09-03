@@ -4,5 +4,16 @@ services:
   dashboard:
     build: .
     image: insgreeb-pro/faustine
+    volumes:
+      - static:/app/out
+  ui:
+    image: nginx:alpine
+    depends_on:
+      - dashboard
+    volumes:
+      - static:/usr/share/nginx/html
     ports:
-      - 3315:3000
+      - 3315:80
+
+volumes:
+  static:
