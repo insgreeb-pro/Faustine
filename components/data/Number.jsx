@@ -13,7 +13,7 @@ export default ({ title, value, thld, unit, info, icon }) => {
         {value}
         <span className="numberValueUnit">{unit}</span>
       </div>
-      <InfoTooltip title={{ title }} info={{ info }} bg={background} />
+      <InfoTooltip title={title} info={info} bg={background} />
     </Container>
   ) : (
     //icon
@@ -31,7 +31,7 @@ export default ({ title, value, thld, unit, info, icon }) => {
           {icon}
         </IconContext.Provider>
       </div>
-      <InfoTooltip title={{ title }} info={{ info }} bg={background} />
+      <InfoTooltip title={title} info={info} bg={background} />
     </Container>
   )
 }

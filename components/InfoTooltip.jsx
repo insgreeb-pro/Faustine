@@ -12,10 +12,10 @@ export default ({ title, info, bg }) => {
           // ISI TOOLTIP
           <Popover>
             <Popover.Title as="h3" className="popover-title">
-              {title.title}
+              {title}
             </Popover.Title>
             <Popover.Content className="popover-content">
-              {info.info}
+              {info}
             </Popover.Content>
           </Popover>
         }

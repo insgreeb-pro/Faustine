@@ -33,8 +33,8 @@ export default () => {
     },
     {
       lokasi: "Kantin Teknik",
-      top: "31%",
-      left: "29.5%",
+      top: "30%",
+      left: "29%",
       icon: <FaUtensils />,
     },
     {

@@ -40,7 +40,7 @@ export default ({ title, value, minV, maxV, thld, unit, info }) => {
         className="circular"
       />
       <div className="circularCaption">{title}</div>
-      <InfoTooltip title={{ title }} info={{ info }} bg={background} />
+      <InfoTooltip title={title} info={info} bg={background} />
     </Container>
   )
 }
