@@ -1,27 +1,21 @@
 import Head from "next/head"
 import Sidebar from "../components/Sidebar"
 import GridContent from "../components/GridContent"
-import Circular from "../components/Circular"
-import Number from "../components/Number"
+import Selector from "../components/data/Selector"
 import Carousel from "../components/Carousel"
 import Keterangan from "../components/Keterangan"
-import Buttondatagrafik from "../components/Buttondatagrafik"
-import { FaStar } from "react-icons/fa"
-
-import { Container } from "../components/Container"
-import Cobachart from "../components/sementara chart/cobachart"
 
 // Judul halaman web
 const title = "Pengelolaan Limbah dan Material"
 
 // Isi slideshow
 const slides = [
-  {
-    source: "pengelolaanlimbah1.jpg",
-    judul: "Material Ramah Lingkungan",
-    isi:
-      "I think this should be fairly easy so if you just want to have a look we exceed the clients' expectations is this the best we can do it looks a bit empty, try to make everything bigger",
-  },
+  // {
+  //   source: "pengelolaanlimbah1.jpg",
+  //   judul: "Material Ramah Lingkungan",
+  //   isi:
+  //     "I think this should be fairly easy so if you just want to have a look we exceed the clients' expectations is this the best we can do it looks a bit empty, try to make everything bigger",
+  // },
   {
     source: "pengelolaanlimbah2.jpg",
     judul: "Lampu Rendah Merkuri",
@@ -54,6 +48,46 @@ const slides = [
   },
 ]
 
+const data = [
+  {
+    tipe: "Number",
+    props: {
+      title: "Nilai ODP",
+      ukuran: "1/1/span 1/span 1",
+      value: "0",
+      thld: "-0.1", //REVERSE YAH
+      info:
+        "Wiggle room driving the initiative forward low hanging fruit. Not the long pole in my tent.",
+    },
+  },
+  {
+    tipe: "Number",
+    props: {
+      title: "Nilai GWP",
+      ukuran: "1/2/span 1/span 1",
+      value: "0",
+      thld: "-0.1", //REVERSE YAH
+      info:
+        "Don't over think it put a record on and see who dances parallel path hammer out, nor that is a good problem to have.",
+    },
+  },
+  {
+    tipe: "Number",
+    props: {
+      title: "Merkuri pada sistem pencahayaan",
+      ukuran: "1/3/span 1/span 1",
+      value: "1",
+      thld: "0", //REVERSE YAH
+      unit: "g",
+      info:
+        "Groom the backlog t-shaped individual helicopter view. Knowledge process outsourcing all hands on deck knowledge process outsourcing. T-shaped individual pro-sumer software.",
+    },
+  },
+]
+
+const render = data.map(({ tipe, props }) => (
+  <Selector key={props} tipe={tipe} props={props} />
+))
 export default () => (
   <>
     <Head>
@@ -63,31 +97,7 @@ export default () => (
     <Sidebar activePage={title} />
 
     <GridContent title={title} kelas="pengelolaanlimbahdanmaterial">
-      <Number
-        title="Nilai ODP"
-        ukuran="1/1/span 1/span 1"
-        value="0"
-        thld="-0.1" //REVERSE YAH
-        info="Wiggle room driving the initiative forward low hanging fruit. Not the long pole in my tent."
-      />
-
-      <Number
-        title="Nilai GWP"
-        ukuran="1/2/span 1/span 1"
-        value="0"
-        thld="-0.1" //REVERSE YAH
-        info="Don't over think it put a record on and see who dances parallel path hammer out, nor that is a good problem to have."
-      />
-
-      <Number
-        title="Merkuri pada sistem pencahayaan"
-        ukuran="1/3/span 1/span 1"
-        value="1"
-        thld="0" //REVERSE YAH
-        unit="g"
-        info="Groom the backlog t-shaped individual helicopter view. Knowledge process outsourcing all hands on deck knowledge process outsourcing. T-shaped individual pro-sumer software."
-      />
-
+      {render}
       <Carousel slides={slides}>*Upaya lain yang dilakukan</Carousel>
       <Keterangan />
     </GridContent>

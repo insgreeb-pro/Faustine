@@ -1,11 +1,11 @@
-import { Container } from "../components/Container"
-import InfoTooltip from "../components/InfoTooltip"
+import { Container } from "../Container"
+import InfoTooltip from "../InfoTooltip"
 import { IconContext } from "react-icons"
 
-export default ({ title, value, thld, minV, maxV, unit, info, children }) => {
+export default ({ title, value, thld, unit, info, icon }) => {
   const background = thld ? (value < thld ? "#EF476F" : "#1EF9A5") : null
 
-  return `${children}` == "undefined" ? (
+  return `${icon}` == "undefined" ? (
     //biasa
     <Container bg={background}>
       <div className="numberCaption">{title}</div>
@@ -28,7 +28,7 @@ export default ({ title, value, thld, minV, maxV, unit, info, children }) => {
             style: { verticalAlign: "inherit" },
           }}
         >
-          {children}
+          {icon}
         </IconContext.Provider>
       </div>
       <InfoTooltip title={{ title }} info={{ info }} bg={background} />

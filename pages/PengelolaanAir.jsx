@@ -1,14 +1,11 @@
 import Head from "next/head"
 import Sidebar from "../components/Sidebar"
 import GridContent from "../components/GridContent"
-import Circular from "../components/Circular"
-import Number from "../components/Number"
+import Selector from "../components/data/Selector"
 import Carousel from "../components/Carousel"
 import Keterangan from "../components/Keterangan"
-import Buttondatagrafik from "../components/Buttondatagrafik"
 import { FaStar } from "react-icons/fa"
-
-import StackedBarChart from "../components/StackedBarChart"
+import GrafikAir from "../components/GrafikAir"
 
 // Judul halaman web
 const title = "Pengelolaan Air"
@@ -41,6 +38,37 @@ const slides = [
   },
 ]
 
+const data = [
+  {
+    tipe: "Circular",
+    props: {
+      title: "Persentase keran auto-stop",
+      value: "52",
+      minV: "0",
+      maxV: "100",
+      thld: "50",
+      unit: "%",
+      info:
+        "Spinning our wheels put a record on and see who dances 4-blocker, that's mint, well done. Create spaces to explore what’s next.",
+    },
+  },
+  {
+    tipe: "Number",
+    props: {
+      title: "Rata-rata WELS rating keran bangunan",
+      value: "5.3",
+      thld: "0.3",
+      info:
+        "Sorry i was triple muted manage expectations we're ahead of the one where do we stand on the latest client ask who's responsible for the ask for this request?.",
+      icon: <FaStar style={{ verticalAlign: "initial" }} />,
+    },
+  },
+]
+
+const render = data.map(({ tipe, props }) => (
+  <Selector key={props} tipe={tipe} props={props} />
+))
+
 export default () => (
   <>
     <Head>
@@ -50,26 +78,9 @@ export default () => (
     <Sidebar activePage={title} />
 
     <GridContent title={title} kelas="pengelolaanair">
-      <StackedBarChart />
-      <Circular
-        title="Persentase keran auto-stop"
-        value="52"
-        minV="0"
-        maxV="100"
-        thld="50"
-        unit="%"
-        info="Spinning our wheels put a record on and see who dances 4-blocker, that's mint, well done. Create spaces to explore what’s next."
-      />
-      <Number
-        title="Rata-rata WELS rating keran bangunan"
-        value="5.3"
-        thld="0.3"
-        info="Sorry i was triple muted manage expectations we're ahead of the one where do we stand on the latest client ask who's responsible for the ask for this request?."
-      >
-        <FaStar style={{ verticalAlign: "initial" }} />
-      </Number>
+      <GrafikAir />
+      {render}
       <Carousel slides={slides}>*Upaya lain yang dilakukan</Carousel>
-      <Buttondatagrafik />
       <Keterangan />
     </GridContent>
   </>

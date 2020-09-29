@@ -1,12 +1,10 @@
 import Head from "next/head"
 import Sidebar from "../components/Sidebar"
 import GridContent from "../components/GridContent"
-import Circular from "../components/Circular"
-import Number from "../components/Number"
+import Selector from "../components/data/Selector"
 import Carousel from "../components/Carousel"
 import Keterangan from "../components/Keterangan"
-import Buttondatagrafik from "../components/Buttondatagrafik"
-import LineChart from "../components/LineChart"
+import GrafikEnergi from "../components/GrafikEnergi"
 
 // Judul halaman web
 const title = "Konservasi Energi"
@@ -37,13 +35,42 @@ const slides = [
     isi:
       "That's great, but can you make it work for ie 2 please could you solutionize that for me, but mmm, exactly like that, but different",
   },
+  // {
+  //   source: "konservasienergi5.jpg",
+  //   judul: "Teknologi Fotovoltaik",
+  //   isi:
+  //     "Try to make everything bigger, so you can get my logo from facebook. Can you make the font bigger?",
+  // },
+]
+
+const data = [
   {
-    source: "konservasienergi5.jpg",
-    judul: "Teknologi Fotovoltaik",
-    isi:
-      "Try to make everything bigger, so you can get my logo from facebook. Can you make the font bigger?",
+    tipe: "Circular",
+    props: {
+      title: "Energi terbarukan yang dihasilkan",
+      value: "5",
+      minV: "0",
+      maxV: "100",
+      unit: "%",
+      info:
+        "Cloud strategy one-sheet, for cloud native container based, come up with something buzzworthy, but low-hanging fruit.",
+    },
+  },
+  {
+    tipe: "Number",
+    props: {
+      title: "Energi terbarukan yang dihasilkan bulan ini",
+      value: "3.2",
+      unit: "kwh/m2",
+      info:
+        "Teams were able to drive adoption and awareness. Strategic high-level 30,000 ft view hire the best or strategic fit closing these latest prospects is like putting socks on an octopus touch base we've bootstrapped the model yet put a record on and see who dances.",
+    },
   },
 ]
+
+const render = data.map(({ tipe, props }) => (
+  <Selector key={props} tipe={tipe} props={props} />
+))
 
 export default () => (
   <>
@@ -54,28 +81,9 @@ export default () => (
     <Sidebar activePage={title} />
 
     <GridContent title={title} kelas="konservasienergi">
-      <LineChart />
-
-      <Circular
-        title="Energi terbarukan yang dihasilkan"
-        ukuran="3/1/span 1/span 1"
-        value="5"
-        minV="0"
-        maxV="100"
-        unit="%"
-        info="Cloud strategy one-sheet, for cloud native container based, come up with something buzzworthy, but low-hanging fruit."
-      />
-
-      <Number
-        title="Energi terbarukan yang dihasilkan bulan ini"
-        ukuran="3/2/span 1/span 1"
-        value="3.2"
-        unit="kwh/m2"
-        info="Teams were able to drive adoption and awareness. Strategic high-level 30,000 ft view hire the best or strategic fit closing these latest prospects is like putting socks on an octopus touch base we've bootstrapped the model yet put a record on and see who dances."
-      />
-
+      <GrafikEnergi />
+      {render}
       <Carousel slides={slides}>*Upaya lain yang dilakukan</Carousel>
-      <Buttondatagrafik />
       <Keterangan />
     </GridContent>
   </>

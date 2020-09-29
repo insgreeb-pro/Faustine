@@ -1,6 +1,6 @@
 import { CircularProgressbar } from "react-circular-progressbar"
-import { Container } from "../components/Container"
-import InfoTooltip from "../components/InfoTooltip"
+import { Container } from "../Container"
+import InfoTooltip from "../InfoTooltip"
 
 export default ({ title, value, minV, maxV, thld, unit, info }) => {
   const background = value < thld ? "#EF476F" : "#1EF9A5"
