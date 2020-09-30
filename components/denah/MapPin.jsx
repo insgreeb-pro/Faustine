@@ -3,11 +3,20 @@ import Modal from "react-bootstrap/Modal"
 import OverlayTrigger from "react-bootstrap/OverlayTrigger"
 import Popover from "react-bootstrap/Popover"
 import Button from "react-bootstrap/Button"
+import { PopoverContent } from "react-bootstrap"
 
-export default ({ lokasi, top, left, icon, pic }) => {
+export default ({ lokasi, top, left, icon, ctop, ptoc }) => {
   const [show, setShow] = useState(false)
+  const [Status, setStatus] = useState(true)
+  function toggle(Status) {
+    ctop(Status)
+  }
+  const handleShow = () => {
+    setShow(true)
+    setStatus(false)
+    toggle()
+  }
   const handleClose = () => setShow(false)
-  const handleShow = () => setShow(true)
 
   const buttonProp = {
     className: "pin",
@@ -22,10 +31,10 @@ export default ({ lokasi, top, left, icon, pic }) => {
       marginTop: "-0.5vh",
     },
   }
-
   const imgProp = {
     style: { width: "100%" },
   }
+
   return (
     <>
       <OverlayTrigger
@@ -34,6 +43,7 @@ export default ({ lokasi, top, left, icon, pic }) => {
             <Popover.Title as="h3" className="popover-title">
               {lokasi}
             </Popover.Title>
+            {ptoc}
           </Popover>
         }
       >

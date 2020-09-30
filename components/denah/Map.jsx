@@ -1,3 +1,5 @@
+import { useState } from "react"
+import Popover from "react-bootstrap/Popover"
 import MapPin from "./MapPin"
 import {
   FaRegHospital,
@@ -12,18 +14,19 @@ import {
 } from "react-icons/fa"
 import { AiFillPrinter } from "react-icons/ai"
 
-export default () => {
-  const iconstyle = { height: "1.5em", width: "1.5em" }
-  const mapstyle = {
-    // backgroundImage: "url('/img/map.png')",
-    width: "100%",
-    height: "90%",
-    borderRadius: "2vh",
-    backgroundSize: "cover",
-    overflow: "hidden",
-    position: "relative",
-  }
+const iconstyle = { height: "1.5em", width: "1.5em" }
+const mapstyle = {
+  // backgroundImage: "url('/img/map.png')",
+  width: "100%",
+  height: "90%",
+  borderRadius: "2vh",
+  backgroundSize: "cover",
+  overflow: "hidden",
+  position: "relative",
+}
 
+export default () => {
+  const [Pop, setPop] = useState(true)
   const pin = [
     {
       lokasi: "Departemen Teknik Nuklir Teknik Fisika",
@@ -116,15 +119,20 @@ export default () => {
       icon: <FaBus />,
     },
   ]
+  function change(newValue) {
+    setPop(newValue)
+  }
+  const ptoc = Pop ? <Popover.Content>Click Me!</Popover.Content> : null
 
-  const all_pin = pin.map(({ lokasi, left, top, icon, pic }) => (
+  const all_pin = pin.map(({ lokasi, left, top, icon }) => (
     <MapPin
       key={lokasi}
       lokasi={lokasi}
       left={left}
       top={top}
       icon={icon}
-      pic={pic}
+      ctop={change}
+      ptoc={ptoc}
     />
   ))
 
