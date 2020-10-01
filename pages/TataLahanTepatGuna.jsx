@@ -97,7 +97,6 @@ export default () => (
     <GridContent title={title} kelas="tatalahantepatguna">
       {/* sengaja dikosongkan */}
       <div></div>
-
       {render}
       <Carousel slides={slides}>Upaya lain yang dilakukan</Carousel>
       <Map />

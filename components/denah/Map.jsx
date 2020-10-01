@@ -152,7 +152,7 @@ export default () => {
       </div>
       {/* Peta */}
       <div style={mapstyle}>
-        <img src="/img/map.png" style={{ height: "100%" }}></img>
+        <img src="/img/map.png" style={{ width: "100%", height: "100%" }}></img>
         {all_pin}
       </div>
     </div>

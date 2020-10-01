@@ -26,7 +26,6 @@ export default ({ slides, area, children }) => {
         fade
         style={{
           width: "100%",
-          height: "100%",
         }}
         className="neoCarousel"
       >

@@ -52,50 +52,51 @@ body {
   align-content: space-between;
   justify-items: center;
   align-items: center;
+  gap: 2.5vw;
 }
 
 .tatalahantepatguna {
   grid-template:
-    "map map map map carousel" 10.5vw
-    "map map map map carousel" 10.5vw
-    "map map map map  ." 9vw
-    ". . . . keterangan" 10.5vw / 10.5vw 10.5vw 10.5vw 10.5vw 36vw;
+    "map map map map carousel" 11vw
+    "map map map map carousel" 11vw
+    "map map map map  ." 11vw
+    ". . . . keterangan" 11vw / 11vw 11vw 11vw 11vw 36vw;
 }
 
 .pengelolaanair {
   grid-template:
-    "chart chart chart chart carousel  " 10.5vw
-    "chart chart chart chart carousel  " 10.5vw
-    ".     .   button button keterangan" 10.5vw / 10.5vw 10.5vw 10.5vw 10.5vw 36vw;
+    "chart chart chart chart carousel  " 11vw
+    "chart chart chart chart carousel  " 11vw
+    ".     .   button button keterangan" 11vw / 11vw 11vw 11vw 11vw 36vw;
 }
 
 .konservasienergi {
   grid-template:
-    "chart chart chart chart carousel " 10.5vw
-    "chart chart chart chart carousel " 10.5vw
-    ".     .  button button keterangan" 10.5vw / 10.5vw 10.5vw 10.5vw 10.5vw 36vw;
+    "chart chart chart chart carousel " 11vw
+    "chart chart chart chart carousel " 11vw
+    ".     .  button button keterangan" 11vw / 11vw 11vw 11vw 11vw 36vw;
 }
 
 .kesehatandankenyamanan {
   grid-template:
-    "lantai1 lantai1 lantai1 lantai1 carousel" 10.5vw
-    "lantai1 lantai1 lantai1 lantai1 carousel" 10.5vw
-    "lantai2 lantai2 lantai2 lantai2 .       " 10.5vw
-    "lantai2 lantai2 lantai2 lantai2 keterangan" 10.5vw / 10.5vw 10.5vw 10.5vw 10.5vw 36vw;
+    "lantai1 lantai1 lantai1 lantai1 carousel" 12vw
+    "lantai1 lantai1 lantai1 lantai1 carousel" 12vw
+    "lantai2 lantai2 lantai2 lantai2 .       " 12vw
+    "lantai2 lantai2 lantai2 lantai2 keterangan" 12vw / 11vw 11vw 11vw 11vw 36vw;
 }
 
 .pengelolaanlimbahdanmaterial {
   grid-template:
-    ".   .   .   .   carousel  " 10.5vw
-    ".   .   .   .   carousel  " 10.5vw
-    ".   .   .   .   keterangan" 10.5vw / 10.5vw 10.5vw 10.5vw 10.5vw 36vw;
+    ".   .   .   .   carousel  " 11vw
+    ".   .   .   .   carousel  " 11vw
+    ".   .   .   .   keterangan" 11vw / 11vw 11vw 11vw 11vw 36vw;
 }
 
 .pengelolaanbangunantingkatlanjut {
   grid-template:
-    "carousel carousel carousel . carousel2" 10.5vw
-    "carousel carousel carousel . carousel2" 10.5vw
-    ".        .        .        . .        " 10.5vw / 10.5vw 10.5vw 10.5vw 10.5vw 36vw;
+    "carousel carousel carousel . carousel2" 11vw
+    "carousel carousel carousel . carousel2" 11vw
+    ".        .        .        . .        " 11vw / 11vw 11vw 11vw 11vw 36vw;
 }
 
 /* CONTAINER */
@@ -240,7 +241,7 @@ body {
   bottom: 10%;
 
   /* Font */
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 600;
   text-align: center;
   line-height: 1em;
@@ -256,7 +257,7 @@ body {
   width: 75%;
 
   /* Font */
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 600;
   text-align: center;
   line-height: 1em;
@@ -271,7 +272,7 @@ body {
   width: 80%;
 
   /* Font */
-  font-size: 4em;
+  font-size: 3em;
   font-weight: bold;
   text-align: center;
   vertical-align: bottom;
@@ -381,10 +382,6 @@ body {
   .title {
     font-size: 1.8em;
     height: 10vh;
-  }
-
-  .grid-container {
-    gap: 9vh 3vw;
   }
 
   /* CONTAINER */

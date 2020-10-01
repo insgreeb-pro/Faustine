@@ -7,7 +7,7 @@ export default () => {
       <Button
         variant="danger"
         style={{
-          width: "30%",
+          width: "35%",
           fontSize: "1.2em",
           cursor: "pointer",
           borderRadius: "30px",
