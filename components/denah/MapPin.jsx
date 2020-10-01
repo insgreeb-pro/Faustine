@@ -22,8 +22,8 @@ export default ({ lokasi, top, left, icon, ctop, ptoc }) => {
     className: "pin",
     variant: "primary",
     style: {
-      height: "3vh",
-      width: "3vh",
+      height: "3.5vh",
+      width: "3.5vh",
       padding: "0",
       left: left,
       top: top,

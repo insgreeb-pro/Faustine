@@ -8,7 +8,7 @@ export default () => {
         variant="danger"
         style={{
           width: "35%",
-          fontSize: "1.2em",
+          fontSize: "1.5em",
           cursor: "pointer",
           borderRadius: "30px",
           backgroundColor: "#EF476F",

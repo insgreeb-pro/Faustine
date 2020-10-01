@@ -19,7 +19,7 @@ const styles = {
 
 const heading = {
   width: "80%",
-  fontSize: "3em",
+  fontSize: "4em",
   lineHeight: "1em",
   fontWeight: "700",
   whiteSpace: "normal",
@@ -29,7 +29,7 @@ const heading = {
 }
 
 const caption = {
-  fontSize: "1em",
+  fontSize: "1.3em",
   fontWeight: "500",
   lineHeight: "1.5em",
   whiteSpace: "normal",
@@ -70,7 +70,7 @@ export default () => (
           parameter seperti penggunaan energi, suhu, kelembaban, cahaya, dan
           kualitas udara sebagai tolok ukur dalam suatu siklus waktu tertentu
           yang mengacu pada Standar Nasional Indonesia (SNI). Sistem monitoring
-          ini bergungsi untuk memantau operasional data center dari gangguan
+          ini berfungsi untuk memantau operasional data center dari gangguan
           lingkungan dalam aspek kenyamanan. keamanan, kesehatan, dan
           produktivitas penghuni juga dapat digunakan untuk manajemen bangunan.
         </p>

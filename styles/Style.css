@@ -257,7 +257,7 @@ body {
   width: 75%;
 
   /* Font */
-  font-size: 0.9em;
+  font-size: 1.2em;
   font-weight: 600;
   text-align: center;
   line-height: 1em;
@@ -272,7 +272,7 @@ body {
   width: 80%;
 
   /* Font */
-  font-size: 3em;
+  font-size: 4em;
   font-weight: bold;
   text-align: center;
   vertical-align: bottom;
@@ -429,17 +429,17 @@ body {
   /* CIRCULAR */
   /* CIRCULAR */
   .circularCaption {
-    font-size: 1.1em;
+    font-size: 0.9em;
   }
 
   /* NUMBER */
   /* NUMBER */
   .numberValue {
-    font-size: 4em;
+    font-size: 3em;
   }
 
   .numberCaption {
-    font-size: 1.1em;
+    font-size: 0.9em;
   }
 
   /* CAROUSEL */
