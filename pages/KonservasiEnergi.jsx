@@ -83,7 +83,7 @@ export default () => (
     <GridContent title={title} kelas="konservasienergi">
       <GrafikEnergi />
       {render}
-      <Carousel slides={slides}>*Upaya lain yang dilakukan</Carousel>
+      <Carousel slides={slides}>Upaya lain yang dilakukan</Carousel>
       <Keterangan />
     </GridContent>
   </>

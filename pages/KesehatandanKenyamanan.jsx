@@ -110,7 +110,7 @@ export default () => (
     <GridContent title={title} kelas="kesehatandankenyamanan">
       <Lantai1 />
       <Lantai2 />
-      <Carousel slides={slides}>*Upaya lain yang dilakukan</Carousel>
+      <Carousel slides={slides}>Upaya lain yang dilakukan</Carousel>
       <div
         style={{
           display: "grid",

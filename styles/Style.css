@@ -56,10 +56,10 @@ body {
 
 .tatalahantepatguna {
   grid-template:
-    "map map map map carousel  " 10.5vw
-    "map map map map carousel  " 10.5vw
-    "map map map map keterangan  " 9vw
-    ". . . . ." 10.5vw / 10.5vw 10.5vw 10.5vw 10.5vw 36vw;
+    "map map map map carousel" 10.5vw
+    "map map map map carousel" 10.5vw
+    "map map map map  ." 9vw
+    ". . . . keterangan" 10.5vw / 10.5vw 10.5vw 10.5vw 10.5vw 36vw;
 }
 
 .pengelolaanair {
@@ -93,8 +93,8 @@ body {
 
 .pengelolaanbangunantingkatlanjut {
   grid-template:
-    "carousel carousel carousel carousel carousel2" 10.5vw
-    "carousel carousel carousel carousel carousel2" 10.5vw
+    "carousel carousel carousel . carousel2" 10.5vw
+    "carousel carousel carousel . carousel2" 10.5vw
     ".        .        .        . .        " 10.5vw / 10.5vw 10.5vw 10.5vw 10.5vw 36vw;
 }
 
