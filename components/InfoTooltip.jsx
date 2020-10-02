@@ -1,6 +1,5 @@
 import OverlayTrigger from "react-bootstrap/OverlayTrigger"
 import Popover from "react-bootstrap/Popover"
-import Button from "react-bootstrap/Button"
 
 export default ({ title, info, bg }) => {
   const icon = bg == null ? "informationIconBlack.svg" : "informationIcon.svg"

@@ -1,7 +1,8 @@
 import SidebarChild from "./Sidebarchild"
-import { FaFacebookF } from "react-icons/fa"
+import { FaFacebookF, FaInfo } from "react-icons/fa"
 import { RiEarthLine } from "react-icons/ri"
-import Link from "next/link"
+import OverlayTrigger from "react-bootstrap/OverlayTrigger"
+import Popover from "react-bootstrap/Popover"
 
 function Bio() {
   const styles = {
@@ -13,6 +14,43 @@ function Bio() {
 
   return (
     <div style={styles}>
+      <div
+        style={{ cursor: "pointer", textDecoration: "none", color: "#232323" }}
+        className="menu"
+      >
+        <OverlayTrigger
+          placement="top"
+          overlay={
+            <Popover style={{ borderColor: "rgba(0,0,0,0)" }}>
+              <Popover.Content className="popover-content">
+                <img src="/img/logoinsgreeb.png" style={{ width: "100%" }} />
+                InSGreeB merupakan tim riset dari Departemen Teknik Nuklir dan
+                Teknik Fisika dengan research interest yaitu Bangunan Pintar,
+                Bangunan Hijau dan Bangunan Berkelanjutan.
+              </Popover.Content>
+            </Popover>
+          }
+        >
+          {/* icon */}
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <div
+              style={{
+                display: "inline-flex",
+                height: "3.2vw",
+                width: "3.2vw",
+                margin: "0",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "1.7em",
+              }}
+            >
+              <FaInfo />
+            </div>
+            <span>Insgreeb</span>
+          </div>
+        </OverlayTrigger>
+      </div>
+
       <a
         href="https://www.facebook.com/insgreeb.ugm?hc_ref=SEARCH&fref=nf"
         style={{ cursor: "pointer", textDecoration: "none", color: "#232323" }}
