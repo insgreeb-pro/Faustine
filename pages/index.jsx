@@ -1,5 +1,6 @@
 import Head from "next/head"
-import Button from "../components/Button"
+import Link from "next/link"
+import Button from "react-bootstrap/Button"
 
 const title = "Home"
 
@@ -19,7 +20,7 @@ const styles = {
 
 const heading = {
   width: "80%",
-  fontSize: "4em",
+  fontSize: "3.5em",
   lineHeight: "1em",
   fontWeight: "700",
   whiteSpace: "normal",
@@ -38,6 +39,26 @@ const caption = {
   textShadow: "2px 2px 6px #232323",
 }
 
+function BEMS() {
+  return (
+    <Link href={`/TataLahanTepatGuna`}>
+      <Button
+        style={{
+          width: "35%",
+          fontSize: "1.5em",
+          cursor: "pointer",
+          borderRadius: "30px",
+          backgroundColor: "#EF476F",
+          color: "F3EFF5",
+        }}
+        block
+      >
+        BEMS DTNTF UGM
+      </Button>
+    </Link>
+  )
+}
+
 export default () => (
   <>
     <Head>
@@ -53,6 +74,7 @@ export default () => (
         backgroundSize: "cover",
       }}
     ></div>
+
     <div
       style={{
         height: "100vh",
@@ -63,18 +85,24 @@ export default () => (
       }}
     >
       <div style={styles}>
-        <p style={heading}>BEMS</p>
+        <p style={heading}>Performansi Bangunan Hijau</p>
         <p style={caption}>
-          BEMS (Building Environment Monitoring System) merupakan suatu sistem
-          yang mengamati, mencatat, mengukur atau mendokumentasi beberapa
-          parameter seperti penggunaan energi, suhu, kelembaban, cahaya, dan
-          kualitas udara sebagai tolok ukur dalam suatu siklus waktu tertentu
-          yang mengacu pada Standar Nasional Indonesia (SNI). Sistem monitoring
-          ini berfungsi untuk memantau operasional data center dari gangguan
-          lingkungan dalam aspek kenyamanan. keamanan, kesehatan, dan
-          produktivitas penghuni juga dapat digunakan untuk manajemen bangunan.
+          Performansi Bangunan Hijau menunjukkan bagaimana suatu bangunan
+          memengaruhi lingkungan di sekitar dan pengguna bangunan. Beberapa
+          parameter yang diamati dalam bangunan hijau adalah tata lahan,
+          konservasi energi, pengelolaan air, kesehatan dan kenyamanan, limbah
+          dan material, dan manajemen bangunan.
         </p>
-        <Button />
+        <p style={heading}>Tujuan Pemantauan</p>
+        <p style={caption}>
+          Goal kami dalam project ini yaitu menyediakan dashboard sistem
+          pemantauan untuk memonitoring beberapa aspek lingkungan pada bangunan
+          Departemen Teknik Nuklir dan Teknik Fisika. Kami sedang bekerja untuk
+          menuju proyek "kampus biru" UGM dengan konsep green and smart building
+          menggunakan sistem yang saling terintegrasi pada seluruh bangunan di
+          UGM.
+        </p>
+        {BEMS()}
       </div>
     </div>
   </>

@@ -6,6 +6,7 @@ import Carousel from "../components/Carousel"
 import Keterangan from "../components/Keterangan"
 import { FaStar } from "react-icons/fa"
 import GrafikAir from "../components/GrafikAir"
+import Copyright from "../components/Copyright"
 
 // Judul halaman web
 const title = "Pengelolaan Air"
@@ -77,11 +78,16 @@ export default () => (
 
     <Sidebar activePage={title} />
 
-    <GridContent title={title} kelas="pengelolaanair">
+    <GridContent
+      title={title}
+      kelas="pengelolaanair"
+      caption="Upaya penghematan air bersih menjadi salah satu fokus utama dalam agenda pihak pengelola gedung karena Indonesia hanya memiliki sekitar 4,85% ketersediaan air bersih. Maka dari itu, kriteria ini hadir untuk meningkatkan kesadaran akan pentingnya melakukan penghematan air penggunaan air bersih yang berkaitan dengan penggunaan operasional ruang. Parameter yang digunakan adalah efisiensi air, kualitas air, daur ulang/sumber air alternatif."
+    >
       <GrafikAir />
       {render}
       <Carousel slides={slides}>Upaya lain yang dilakukan</Carousel>
       <Keterangan />
+      <Copyright />
     </GridContent>
   </>
 )

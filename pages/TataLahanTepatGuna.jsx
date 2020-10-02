@@ -6,6 +6,7 @@ import Selector from "../components/data/Selector"
 import Carousel from "../components/Carousel"
 import Map from "../components/denah/Map"
 import Keterangan from "../components/Keterangan"
+import Copyright from "../components/Copyright"
 
 // Judul halaman web
 const title = "Tata Lahan Tepat Guna"
@@ -94,13 +95,18 @@ export default () => (
     <Sidebar activePage={title} />
 
     {/* Menyusun konten dalam suatu grid*/}
-    <GridContent title={title} kelas="tatalahantepatguna">
+    <GridContent
+      title={title}
+      kelas="tatalahantepatguna"
+      caption="Kategori  Tepat Guna Lahan mengangkat isu pemilihan lahan gedung yang memperhatikan keberlanjutan dan ramah lingkungan. Parameter yang diamati seperti pengelolaan lahan, aksesibilitas dan transportasi, efek pulau bahang perkotaan(Urban Heat Island), pengelolaan limpasan air hujan, dan membangun lingkungan "
+    >
       {/* sengaja dikosongkan */}
       <div></div>
       {render}
       <Carousel slides={slides}>Upaya lain yang dilakukan</Carousel>
       <Map />
       <Keterangan />
+      <Copyright />
     </GridContent>
   </>
 )

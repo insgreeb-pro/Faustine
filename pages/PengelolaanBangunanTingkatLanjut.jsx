@@ -2,6 +2,7 @@ import Head from "next/head"
 import Sidebar from "../components/Sidebar"
 import GridContent from "../components/GridContent"
 import Carousel from "../components/Carousel"
+import Copyright from "../components/Copyright"
 
 const title = "Pengelolaan Bangunan Tingkat Lanjut"
 const slides = [
@@ -74,11 +75,16 @@ export default () => (
     <Sidebar activePage={title} />
 
     {/* Menyusun konten dalam suatu grid*/}
-    <GridContent title={title} kelas="pengelolaanbangunantingkatlanjut">
+    <GridContent
+      title={title}
+      kelas="pengelolaanbangunantingkatlanjut"
+      caption="Sering kali upaya bangunan hijau kurang memerhatikan aspek manajemennya, karena alasan skala aktivitas yang tidak sebesar aktivitas suatu bangunan gedung secara utuh. Padahal, seluruh aktivitas dari pengguna ruang sangat menentukan berhasil atau tidaknya penerapan konsep bangunan hijau itu sendiri. Oleh karena itu, upaya upaya yang perlu dilakukan dalam pengelolaan bangunan adalah inovasi, dokumentasi, dan penggunaan jasa tim green operational & maintenance"
+    >
       <Carousel slides={slides}>Upaya lain yang dilakukan</Carousel>
       <Carousel slides={slides2} area="carousel2">
         Upaya dalam bidang manajemen
       </Carousel>
+      <Copyright />
     </GridContent>
   </>
 )

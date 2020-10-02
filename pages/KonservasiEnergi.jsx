@@ -5,6 +5,8 @@ import Selector from "../components/data/Selector"
 import Carousel from "../components/Carousel"
 import Keterangan from "../components/Keterangan"
 import GrafikEnergi from "../components/GrafikEnergi"
+import Copyright from "../components/Copyright"
+import copyright from "../components/Copyright"
 
 // Judul halaman web
 const title = "Konservasi Energi"
@@ -80,11 +82,18 @@ export default () => (
 
     <Sidebar activePage={title} />
 
-    <GridContent title={title} kelas="konservasienergi">
+    <GridContent
+      title={title}
+      kelas="konservasienergi"
+      caption="Prinsip utama dari konservasi energi adalah efisiensi energi melalui pemanfaatan atau pemakaian teknologi yang membutuhkan energi lebih rendah dalam melakukan fungsi yang sama. Parameter yang diperhatikan adalah performansi bangunan dengan energi minimal, pengujian, recommissioning/retrocommissioning, implementasi sistem pemantauan dan kendali energi, operasi dan pemeliharaan, serta pengurangan emisi energi"
+    >
       <GrafikEnergi />
       {render}
       <Carousel slides={slides}>Upaya lain yang dilakukan</Carousel>
       <Keterangan />
+      <div></div>
+      <div></div>
+      <Copyright />
     </GridContent>
   </>
 )

@@ -4,6 +4,7 @@ import GridContent from "../components/GridContent"
 import Selector from "../components/data/Selector"
 import Carousel from "../components/Carousel"
 import Keterangan from "../components/Keterangan"
+import Copyright from "../components/Copyright"
 
 // Judul halaman web
 const title = "Pengelolaan Limbah dan Material"
@@ -96,10 +97,15 @@ export default () => (
 
     <Sidebar activePage={title} />
 
-    <GridContent title={title} kelas="pengelolaanlimbahdanmaterial">
+    <GridContent
+      title={title}
+      kelas="pengelolaanlimbahdanmaterial"
+      caption="Tahap daur hidup sebuah gedung terdiri dari konstruksi, operasi, pemeliharaan, dan pembongkaran. Untuk itu, kategori ini berusaha untuk mengarahkan pengguna berpartisipasi menjaga operasi gedung yang ramah lingkungan melalui penggunaan material atau produk dalam setiap tahap konstruksi fit out, operasi dan pemeliharaan ruang interiornya. Parameter yang diamati adalah refrigeran yang digunakan, pembelian material, dan pengelolaan limbah"
+    >
       {render}
       <Carousel slides={slides}>Upaya lain yang dilakukan</Carousel>
       <Keterangan />
+      <Copyright />
     </GridContent>
   </>
 )

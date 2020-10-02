@@ -6,6 +6,7 @@ import Keterangan from "../components/Keterangan"
 import Selector from "../components/data/Selector"
 import Lantai1 from "../components/denah/Lantai1"
 import Lantai2 from "../components/denah/Lantai2"
+import Copyright from "../components/Copyright"
 
 // Judul halaman web
 const title = "Kesehatan dan Kenyamanan"
@@ -107,7 +108,11 @@ export default () => (
 
     <Sidebar activePage={title} />
 
-    <GridContent title={title} kelas="kesehatandankenyamanan">
+    <GridContent
+      title={title}
+      kelas="kesehatandankenyamanan"
+      caption="Kategori ini bertujuan untuk mencegah masalah kulaitas udara dalam ruang pada proyek ruang interior sehingga pengguna ruang dapat beraktivitas dengan sehat, nyaman dan lebih produktif. Parameter untuk mengukur kesehatan dan kenyamanan suatu bangunan adalah adanya kebijakan anti-merokok, pemantauan kualitas udara, kenyamanan termal, visual, dan akustik, pembasmian hama, kebersihan gedung, dan survei kepuasan pengguna."
+    >
       <Lantai1 />
       <Lantai2 />
       <Carousel slides={slides}>Upaya lain yang dilakukan</Carousel>
@@ -123,6 +128,7 @@ export default () => (
         {render}
       </div>
       <Keterangan />
+      <Copyright />
     </GridContent>
   </>
 )
