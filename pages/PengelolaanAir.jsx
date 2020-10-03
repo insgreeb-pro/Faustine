@@ -5,7 +5,7 @@ import Selector from "../components/data/Selector"
 import Carousel from "../components/Carousel"
 import Keterangan from "../components/Keterangan"
 import { FaStar } from "react-icons/fa"
-import GrafikAir from "../components/GrafikAir"
+import GrafikAir from "../components/grafik/GrafikAir"
 import Copyright from "../components/Copyright"
 
 // Judul halaman web

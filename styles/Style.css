@@ -51,9 +51,10 @@ body {
 
 .tatalahantepatguna {
   grid-template:
-    "map map map map carousel" 11vw
-    "map map map map carousel" 11vw
-    "map map map map  ." 11vw
+    "map map map map pipipopo" 11vw
+    "map map map map pipipopo" 11vw
+    "map map map map  carousel" 11vw
+    ". . . . carousel" 11vw
     ". . . . keterangan" 11vw / 11vw 11vw 11vw 11vw 36vw;
 }
 
@@ -61,7 +62,7 @@ body {
   grid-template:
     "chart chart chart chart carousel" 11vw
     "chart chart chart chart carousel" 11vw
-    ". . . . keterangan" 11vw / 11vw 11vw 11vw 11vw 36vw;
+    "ctrl ctrl . . keterangan" 11vw / 11vw 11vw 11vw 11vw 36vw;
 }
 
 .pengelolaanair {
@@ -187,7 +188,7 @@ body {
   height: 100vh;
   width: 3.2vw;
   /* item stay on top */
-  z-index: 1;
+  z-index: 2;
 
   /* coloring */
   background-color: #ffffff;
@@ -355,11 +356,9 @@ body {
 }
 
 /* CHART */
-.chartjs-size-monitor,
-.chartjs-size-monitor-expand,
-.chartjs-size-monitor-shrink {
-  height: 100%;
-  width: 100%;
+canvas {
+  /* height: auto !important; */
+  /* width: auto !important; */
 }
 
 /* Denah */
@@ -464,13 +463,5 @@ body {
   .legend {
     font-size: 1em;
     line-height: 2em;
-  }
-
-  /* CHART */
-  .chartjs-size-monitor,
-  .chartjs-size-monitor-expand,
-  .chartjs-size-monitor-shrink {
-    height: 100%;
-    width: 100%;
   }
 }

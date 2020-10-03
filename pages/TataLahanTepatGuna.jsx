@@ -7,6 +7,7 @@ import Carousel from "../components/Carousel"
 import Map from "../components/denah/Map"
 import Keterangan from "../components/Keterangan"
 import Copyright from "../components/Copyright"
+import Tampakatas from "../components/denah/Tampakatas"
 
 // Judul halaman web
 const title = "Tata Lahan Tepat Guna"
@@ -101,9 +102,11 @@ export default () => (
       caption="Kategori  Tepat Guna Lahan mengangkat isu pemilihan lahan gedung yang memperhatikan keberlanjutan dan ramah lingkungan. Parameter yang diamati seperti pengelolaan lahan, aksesibilitas dan transportasi, efek pulau bahang perkotaan(Urban Heat Island), pengelolaan limpasan air hujan, dan membangun lingkungan "
     >
       {/* sengaja dikosongkan */}
-      <div></div>
+
+      {/* sengaja dikosongkan */}
       {render}
       <Carousel slides={slides}>Upaya lain yang dilakukan</Carousel>
+      <Tampakatas />
       <Map />
       <Keterangan />
       <Copyright />

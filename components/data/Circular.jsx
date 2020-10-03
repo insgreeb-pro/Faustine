@@ -1,5 +1,5 @@
 import { CircularProgressbar } from "react-circular-progressbar"
-import { Container } from "../Container"
+import Container from "../Container"
 import InfoTooltip from "../InfoTooltip"
 
 export default ({ title, value, minV, maxV, thld, unit, info }) => {

@@ -13,7 +13,7 @@ export default () => {
     <div
       style={{
         padding: "2%",
-        gridArea: "map",
+        gridArea: "pipipopo",
         display: "flex",
         flexDirection: "column",
       }}
@@ -21,12 +21,11 @@ export default () => {
     >
       {/* Judul */}
       <div className="mapTitle">
-        Fasilitas umum di sekitar Departemen Teknik Nuklir dan Teknik Fisika
+        Departemen Teknik Nuklir dan Teknik Fisika tampak atas
       </div>
       {/* Peta */}
       <div style={mapstyle}>
-        <img src="/img/map.png" style={{ width: "100%", height: "100%" }}></img>
-        {all_pin}
+        <img src="/img/tampakatas.jpg" style={{ width: "100%" }}></img>
       </div>
     </div>
   )

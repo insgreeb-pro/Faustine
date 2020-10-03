@@ -1,4 +1,4 @@
-export const Container = ({ bg, children, tipe }) => {
+export default ({ bg, children, tipe }) => {
   const kelas = tipe == null ? "neo" : "neoInset"
 
   return (

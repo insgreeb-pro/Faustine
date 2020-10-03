@@ -4,9 +4,8 @@ import GridContent from "../components/GridContent"
 import Selector from "../components/data/Selector"
 import Carousel from "../components/Carousel"
 import Keterangan from "../components/Keterangan"
-import GrafikEnergi from "../components/GrafikEnergi"
+import GrafikEnergi from "../components/grafik/GrafikEnergi"
 import Copyright from "../components/Copyright"
-import copyright from "../components/Copyright"
 
 // Judul halaman web
 const title = "Konservasi Energi"

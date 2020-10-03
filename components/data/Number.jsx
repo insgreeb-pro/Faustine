@@ -1,4 +1,4 @@
-import { Container } from "../Container"
+import Container from "../Container"
 import InfoTooltip from "../InfoTooltip"
 import { IconContext } from "react-icons"
 
