@@ -20,7 +20,7 @@ const styles = {
 
 const heading = {
   width: "80%",
-  fontSize: "3.5em",
+  fontSize: "2.5em",
   lineHeight: "1em",
   fontWeight: "700",
   whiteSpace: "normal",

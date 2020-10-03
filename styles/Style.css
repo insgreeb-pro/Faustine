@@ -57,18 +57,18 @@ body {
     ". . . . keterangan" 11vw / 11vw 11vw 11vw 11vw 36vw;
 }
 
-.pengelolaanair {
-  grid-template:
-    "chart chart chart chart carousel  " 11vw
-    "chart chart chart chart carousel  " 11vw
-    ".     .   button button keterangan" 11vw / 11vw 11vw 11vw 11vw 36vw;
-}
-
 .konservasienergi {
   grid-template:
-    "chart chart chart chart carousel " 11vw
-    "chart chart chart chart carousel " 11vw
-    ".     .  button button keterangan" 11vw / 11vw 11vw 11vw 11vw 36vw;
+    "chart chart chart chart carousel" 11vw
+    "chart chart chart chart carousel" 11vw
+    ". . . . keterangan" 11vw / 11vw 11vw 11vw 11vw 36vw;
+}
+
+.pengelolaanair {
+  grid-template:
+    "chart chart chart chart carousel" 11vw
+    "chart chart chart chart carousel" 11vw
+    ". . . . keterangan" 11vw / 11vw 11vw 11vw 11vw 36vw;
 }
 
 .kesehatandankenyamanan {
@@ -112,9 +112,16 @@ body {
 .neoInset {
   /* Display */
   padding: 1.2% 2%;
-  height: 92%;
   width: 30%;
-  line-height: 2.3em;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* Font */
+  text-align: center;
+  line-height: 1.2em;
 
   border-radius: 20px;
   box-shadow: 3px 3px 7px rgba(92, 99, 105, 0.2) inset,
@@ -122,6 +129,21 @@ body {
 
   /* font */
   overflow: hidden;
+}
+
+.btn-outline-primary {
+  color: #073b4c;
+  border: 2px solid #073b4c;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary:focus,
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #073b4c !important;
+  border-color: #073b4c;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .neoSmall {

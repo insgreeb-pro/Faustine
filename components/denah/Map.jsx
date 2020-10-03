@@ -14,7 +14,6 @@ import {
 } from "react-icons/fa"
 import { AiFillPrinter } from "react-icons/ai"
 
-const iconstyle = { height: "1.5em", width: "1.5em" }
 const mapstyle = {
   // backgroundImage: "url('/img/map.png')",
   width: "100%",
@@ -33,6 +32,7 @@ export default () => {
       top: "50%",
       left: "35%",
       icon: <FaUniversity />,
+      bg: "#EF476F",
     },
     {
       lokasi: "Kantin Teknik",
@@ -124,7 +124,7 @@ export default () => {
   }
   const ptoc = Pop ? <Popover.Content>Click Me!</Popover.Content> : null
 
-  const all_pin = pin.map(({ lokasi, left, top, icon }) => (
+  const all_pin = pin.map(({ lokasi, left, top, icon, bg }) => (
     <MapPin
       key={lokasi}
       lokasi={lokasi}
@@ -133,6 +133,7 @@ export default () => {
       icon={icon}
       ctop={change}
       ptoc={ptoc}
+      bg={bg}
     />
   ))
 

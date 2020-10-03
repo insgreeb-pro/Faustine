@@ -5,7 +5,7 @@ import Popover from "react-bootstrap/Popover"
 import Button from "react-bootstrap/Button"
 import { PopoverContent } from "react-bootstrap"
 
-export default ({ lokasi, top, left, icon, ctop, ptoc }) => {
+export default ({ lokasi, top, left, icon, ctop, ptoc, bg }) => {
   const [show, setShow] = useState(false)
   const [Status, setStatus] = useState(true)
   function toggle(Status) {
@@ -29,6 +29,8 @@ export default ({ lokasi, top, left, icon, ctop, ptoc }) => {
       top: top,
       marginLeft: "-0.5vh",
       marginTop: "-0.5vh",
+      backgroundColor: bg,
+      borderColor: bg,
     },
   }
   const imgProp = {
