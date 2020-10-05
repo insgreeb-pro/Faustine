@@ -257,18 +257,12 @@ const options = {
 export default () => {
   const [Display, setDisplay] = useState(0)
 
-  const Callback = (value) => {
-    setDisplay(value)
-  }
-
   return (
     <>
       <div style={{ gridArea: "chart", padding: "3%" }} className="neo">
-        <Bar data={data[Display]} options={options} />
-        {/* {`data.${Display}`} */}
-        {/* {datas} */}
+        <Bar data={data[Display]} options={options} redraw />
       </div>
-      <Selector parent={Callback} active={Display} options={data} />
+      <Selector parent={setDisplay} active={Display} options={data} />
     </>
   )
 }
