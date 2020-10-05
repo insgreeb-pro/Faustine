@@ -60,9 +60,9 @@ body {
 
 .konservasienergi {
   grid-template:
-    "ctrl chart chart chart carousel" 11vw
-    "ctrl chart chart chart carousel" 11vw
-    ". . . . keterangan" 11vw / 11vw 11vw 11vw 11vw 36vw;
+    "chart chart chart chart carousel" 11vw
+    "chart chart chart chart carousel" 11vw
+    "ctrl eter eter . keterangan" 11vw / 11vw 11vw 11vw 11vw 36vw;
 }
 
 .pengelolaanair {

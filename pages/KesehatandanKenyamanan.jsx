@@ -69,32 +69,7 @@ const slides = [
   },
 ]
 
-const data = [
-  {
-    tipe: "Number",
-    props: {
-      title: "Jumlah kuman",
-      value: "700",
-      thld: "100", //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
-      unit: "kol/m3",
-      info:
-        "Don't over think it put a record on and see who dances parallel path hammer out, nor that is a good problem to have.",
-    },
-  },
-  {
-    tipe: "Circular",
-    props: {
-      title: "Kepuasan pengguna gedung",
-      value: "3.5",
-      minV: "0",
-      maxV: "5",
-      unit: "",
-      thld: "3",
-      info:
-        "Turn the crank offline this discussion draft policy ppml proposal yet closing these latest prospects is like putting socks on an octopus you better eat a reality sandwich before you walk back in that boardroom",
-    },
-  },
-]
+const data = []
 
 const render = data.map(({ tipe, props }, idx) => {
   return <Selector key={idx} tipe={tipe} props={props} />

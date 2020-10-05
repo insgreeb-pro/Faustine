@@ -2,9 +2,9 @@ import Head from "next/head"
 import Sidebar from "../components/Sidebar"
 import GridContent from "../components/GridContent"
 import Selector from "../components/data/Selector"
+import GrafikEnergi from "../components/grafik/GrafikEnergi"
 import Carousel from "../components/Carousel"
 import Keterangan from "../components/Keterangan"
-import GrafikEnergi from "../components/grafik/GrafikEnergi"
 import Copyright from "../components/Copyright"
 
 // Judul halaman web
@@ -45,18 +45,18 @@ const slides = [
 ]
 
 const data = [
-  // {
-  //   tipe: "Circular",
-  //   props: {
-  //     title: "Energi terbarukan yang dihasilkan",
-  //     value: "5",
-  //     minV: "0",
-  //     maxV: "100",
-  //     unit: "%",
-  //     info:
-  //       "Cloud strategy one-sheet, for cloud native container based, come up with something buzzworthy, but low-hanging fruit.",
-  //   },
-  // },
+  {
+    tipe: "Pie",
+    props: {
+      title: "Energi terbarukan yang dihasilkan",
+      value: "10",
+      minV: "0",
+      maxV: "100",
+      unit: "%",
+      info:
+        "Cloud strategy one-sheet, for cloud native container based, come up with something buzzworthy, but low-hanging fruit.",
+    },
+  },
   {
     tipe: "Number",
     props: {

@@ -1,5 +1,6 @@
 import ToggleButton from "react-bootstrap/ToggleButton"
-import { Container, ToggleButtonGroup } from "react-bootstrap"
+import ToggleButtonGroup from "react-bootstrap/ToggleButtonGroup"
+import Container from "../Container"
 
 export default ({ parent, options, active }) => {
   const title = {
@@ -12,25 +13,20 @@ export default ({ parent, options, active }) => {
     },
   }
 
-  // const radios = [
-  //   { name: "Satu Gedung" },
-  //   { name: "Lantai 1" },
-  //   { name: "Lantai 2" },
-  // ]
-
   return (
     <Container>
       <p {...title}>Indeks Konsumsi Energi</p>
+
       <ToggleButtonGroup
         vertical
         name="radio"
         value={active}
-        onChange={(e) => {
-          parent(e)
+        onChange={(x) => {
+          parent(x)
         }}
       >
         {options.map((data, idx) => (
-          <ToggleButton key={idx} type="radio" variant="secondary" value={idx}>
+          <ToggleButton key={idx} type="radio" variant="primary" value={idx}>
             {data.name}
           </ToggleButton>
         ))}

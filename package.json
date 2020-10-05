@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/insgreeb-pro/Faustine#readme",
   "dependencies": {
-    "@nivo/line": "^0.62.0",
     "bootstrap": "^4.5.0",
     "chart.js": "^2.9.3",
     "esri-leaflet": "^2.5.0",
@@ -30,7 +29,6 @@
     "leaflet": "^1.7.1",
     "leaflet.markercluster": "^1.4.1",
     "next": "^9.4.4",
-    "nivo": "^0.31.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.2.2",
     "react-chartjs-2": "^2.9.0",

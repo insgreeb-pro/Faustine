@@ -51,86 +51,30 @@ export default () => {
               "Wiggle room driving the initiative forward low hanging fruit. Not the long pole in my tent.",
           },
         },
-      ],
-    },
-    {
-      lokasi: "Ruang Arsip",
-      top: "28%",
-      left: "17.5%",
-      data: [
         {
           tipe: "Number",
           props: {
-            title: "Kadar debu",
-            value: "0.15",
-            unit: "mg/m3",
-            thld: "0.1", //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
+            title: "Jumlah kuman",
+            value: "700",
+            thld: "100", //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
+            unit: "kol/m3",
             info:
-              "Run it up the flag pole we’re starting to formalize flexible opinions around our foundations.",
+              "Don't over think it put a record on and see who dances parallel path hammer out, nor that is a good problem to have.",
           },
         },
         {
-          tipe: "Number",
+          tipe: "Circular",
           props: {
-            title: "Sound Transmission Class",
-            value: "50",
-            thld: "25", // YANG INI AGA ANEH, DIA PAKE RANGE GITUU
+            title: "Kepuasan pengguna gedung",
+            value: "3.5",
+            minV: "0",
+            maxV: "5",
+            unit: "",
+            thld: "3",
             info:
-              "Touch base that ipo will be a game-changer circle back around focus on the customer journey, or peel the onion nor circle back.",
+              "Turn the crank offline this discussion draft policy ppml proposal yet closing these latest prospects is like putting socks on an octopus you better eat a reality sandwich before you walk back in that boardroom",
           },
         },
-        {
-          tipe: "Number",
-          props: {
-            title: "Kadar VOC",
-            value: "0.3",
-            thld: "0.1", //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
-            unit: "ppm",
-            info:
-              "Wiggle room driving the initiative forward low hanging fruit. Not the long pole in my tent.",
-          },
-        },
-      ],
-    },
-    {
-      lokasi: "Ruang MRKI",
-      top: "32%",
-      left: "34%",
-      data: [
-        [
-          {
-            tipe: "Number",
-            props: {
-              title: "Kadar debu",
-              value: "0.13",
-              unit: "mg/m3",
-              thld: "0.1", //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
-              info:
-                "Run it up the flag pole we’re starting to formalize flexible opinions around our foundations.",
-            },
-          },
-          {
-            tipe: "Number",
-            props: {
-              title: "Sound Transmission Class",
-              value: "39",
-              thld: "25", // YANG INI AGA ANEH, DIA PAKE RANGE GITUU
-              info:
-                "Touch base that ipo will be a game-changer circle back around focus on the customer journey, or peel the onion nor circle back.",
-            },
-          },
-          {
-            tipe: "Number",
-            props: {
-              title: "Kadar VOC",
-              value: "0.25",
-              thld: "0.1", //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
-              unit: "ppm",
-              info:
-                "Wiggle room driving the initiative forward low hanging fruit. Not the long pole in my tent.",
-            },
-          },
-        ],
       ],
     },
     {
@@ -192,6 +136,19 @@ export default () => {
               "Don't over think it put a record on and see who dances parallel path hammer out, nor that is a good problem to have.",
           },
         },
+        {
+          tipe: "Circular",
+          props: {
+            title: "Kepuasan pengguna gedung",
+            value: "3.5",
+            minV: "0",
+            maxV: "5",
+            unit: "",
+            thld: "3",
+            info:
+              "Turn the crank offline this discussion draft policy ppml proposal yet closing these latest prospects is like putting socks on an octopus you better eat a reality sandwich before you walk back in that boardroom",
+          },
+        },
       ],
     },
     {
@@ -240,6 +197,30 @@ export default () => {
             unit: "ppm",
             info:
               "Wiggle room driving the initiative forward low hanging fruit. Not the long pole in my tent.",
+          },
+        },
+        {
+          tipe: "Number",
+          props: {
+            title: "Jumlah kuman",
+            value: "700",
+            thld: "100", //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
+            unit: "kol/m3",
+            info:
+              "Don't over think it put a record on and see who dances parallel path hammer out, nor that is a good problem to have.",
+          },
+        },
+        {
+          tipe: "Circular",
+          props: {
+            title: "Kepuasan pengguna gedung",
+            value: "3.5",
+            minV: "0",
+            maxV: "5",
+            unit: "",
+            thld: "3",
+            info:
+              "Turn the crank offline this discussion draft policy ppml proposal yet closing these latest prospects is like putting socks on an octopus you better eat a reality sandwich before you walk back in that boardroom",
           },
         },
       ],
@@ -303,43 +284,17 @@ export default () => {
               "Don't over think it put a record on and see who dances parallel path hammer out, nor that is a good problem to have.",
           },
         },
-      ],
-    },
-    {
-      lokasi: "Ruang Dosen",
-      top: "32%",
-      left: "86.5%",
-      data: [
         {
-          tipe: "Number",
+          tipe: "Circular",
           props: {
-            title: "Kadar debu",
-            value: "0.15",
-            unit: "mg/m3",
-            thld: "0.1", //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
+            title: "Kepuasan pengguna gedung",
+            value: "3.5",
+            minV: "0",
+            maxV: "5",
+            unit: "",
+            thld: "3",
             info:
-              "Run it up the flag pole we’re starting to formalize flexible opinions around our foundations.",
-          },
-        },
-        {
-          tipe: "Number",
-          props: {
-            title: "Sound Transmission Class",
-            value: "50",
-            thld: "25", // YANG INI AGA ANEH, DIA PAKE RANGE GITUU
-            info:
-              "Touch base that ipo will be a game-changer circle back around focus on the customer journey, or peel the onion nor circle back.",
-          },
-        },
-        {
-          tipe: "Number",
-          props: {
-            title: "Kadar VOC",
-            value: "0.3",
-            thld: "0.1", //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
-            unit: "ppm",
-            info:
-              "Wiggle room driving the initiative forward low hanging fruit. Not the long pole in my tent.",
+              "Turn the crank offline this discussion draft policy ppml proposal yet closing these latest prospects is like putting socks on an octopus you better eat a reality sandwich before you walk back in that boardroom",
           },
         },
       ],
@@ -403,6 +358,19 @@ export default () => {
               "Don't over think it put a record on and see who dances parallel path hammer out, nor that is a good problem to have.",
           },
         },
+        {
+          tipe: "Circular",
+          props: {
+            title: "Kepuasan pengguna gedung",
+            value: "3.5",
+            minV: "0",
+            maxV: "5",
+            unit: "",
+            thld: "3",
+            info:
+              "Turn the crank offline this discussion draft policy ppml proposal yet closing these latest prospects is like putting socks on an octopus you better eat a reality sandwich before you walk back in that boardroom",
+          },
+        },
       ],
     },
     {
@@ -453,43 +421,28 @@ export default () => {
               "Wiggle room driving the initiative forward low hanging fruit. Not the long pole in my tent.",
           },
         },
-      ],
-    },
-    {
-      lokasi: "Ruang PSOC",
-      top: "53%",
-      left: "33.5%",
-      data: [
         {
           tipe: "Number",
           props: {
-            title: "Kadar debu",
-            value: "0.15",
-            unit: "mg/m3",
-            thld: "0.1", //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
+            title: "Jumlah kuman",
+            value: "700",
+            thld: "100", //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
+            unit: "kol/m3",
             info:
-              "Run it up the flag pole we’re starting to formalize flexible opinions around our foundations.",
+              "Don't over think it put a record on and see who dances parallel path hammer out, nor that is a good problem to have.",
           },
         },
         {
-          tipe: "Number",
+          tipe: "Circular",
           props: {
-            title: "Sound Transmission Class",
-            value: "50",
-            thld: "25", // YANG INI AGA ANEH, DIA PAKE RANGE GITUU
+            title: "Kepuasan pengguna gedung",
+            value: "3.5",
+            minV: "0",
+            maxV: "5",
+            unit: "",
+            thld: "3",
             info:
-              "Touch base that ipo will be a game-changer circle back around focus on the customer journey, or peel the onion nor circle back.",
-          },
-        },
-        {
-          tipe: "Number",
-          props: {
-            title: "Kadar VOC",
-            value: "0.3",
-            thld: "0.1", //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
-            unit: "ppm",
-            info:
-              "Wiggle room driving the initiative forward low hanging fruit. Not the long pole in my tent.",
+              "Turn the crank offline this discussion draft policy ppml proposal yet closing these latest prospects is like putting socks on an octopus you better eat a reality sandwich before you walk back in that boardroom",
           },
         },
       ],
@@ -542,127 +495,30 @@ export default () => {
               "Wiggle room driving the initiative forward low hanging fruit. Not the long pole in my tent.",
           },
         },
-      ],
-    },
-    {
-      lokasi: "Ruang Dosen",
-      top: "50%",
-      left: "64%",
-      data: [
-        [
-          {
-            tipe: "Number",
-            props: {
-              title: "Kadar debu",
-              value: "0.13",
-              unit: "mg/m3",
-              thld: "0.1", //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
-              info:
-                "Run it up the flag pole we’re starting to formalize flexible opinions around our foundations.",
-            },
-          },
-          {
-            tipe: "Number",
-            props: {
-              title: "Sound Transmission Class",
-              value: "39",
-              thld: "25", // YANG INI AGA ANEH, DIA PAKE RANGE GITUU
-              info:
-                "Touch base that ipo will be a game-changer circle back around focus on the customer journey, or peel the onion nor circle back.",
-            },
-          },
-          {
-            tipe: "Number",
-            props: {
-              title: "Kadar VOC",
-              value: "0.25",
-              thld: "0.1", //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
-              unit: "ppm",
-              info:
-                "Wiggle room driving the initiative forward low hanging fruit. Not the long pole in my tent.",
-            },
-          },
-        ],
-      ],
-    },
-    {
-      lokasi: "Ruang Dosen",
-      top: "67.5%",
-      left: "64%",
-      data: [
         {
           tipe: "Number",
           props: {
-            title: "Kadar debu",
-            value: "0.15",
-            unit: "mg/m3",
-            thld: "0.1", //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
+            title: "Jumlah kuman",
+            value: "700",
+            thld: "100", //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
+            unit: "kol/m3",
             info:
-              "Run it up the flag pole we’re starting to formalize flexible opinions around our foundations.",
+              "Don't over think it put a record on and see who dances parallel path hammer out, nor that is a good problem to have.",
           },
         },
         {
-          tipe: "Number",
+          tipe: "Circular",
           props: {
-            title: "Sound Transmission Class",
-            value: "50",
-            thld: "25", // YANG INI AGA ANEH, DIA PAKE RANGE GITUU
+            title: "Kepuasan pengguna gedung",
+            value: "3.5",
+            minV: "0",
+            maxV: "5",
+            unit: "",
+            thld: "3",
             info:
-              "Touch base that ipo will be a game-changer circle back around focus on the customer journey, or peel the onion nor circle back.",
+              "Turn the crank offline this discussion draft policy ppml proposal yet closing these latest prospects is like putting socks on an octopus you better eat a reality sandwich before you walk back in that boardroom",
           },
         },
-        {
-          tipe: "Number",
-          props: {
-            title: "Kadar VOC",
-            value: "0.3",
-            thld: "0.1", //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
-            unit: "ppm",
-            info:
-              "Wiggle room driving the initiative forward low hanging fruit. Not the long pole in my tent.",
-          },
-        },
-      ],
-    },
-    {
-      lokasi: "Ruang Dosen",
-      top: "60%",
-      left: "75%",
-      data: [
-        [
-          {
-            tipe: "Number",
-            props: {
-              title: "Kadar debu",
-              value: "0.13",
-              unit: "mg/m3",
-              thld: "0.1", //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
-              info:
-                "Run it up the flag pole we’re starting to formalize flexible opinions around our foundations.",
-            },
-          },
-          {
-            tipe: "Number",
-            props: {
-              title: "Sound Transmission Class",
-              value: "39",
-              thld: "25", // YANG INI AGA ANEH, DIA PAKE RANGE GITUU
-              info:
-                "Touch base that ipo will be a game-changer circle back around focus on the customer journey, or peel the onion nor circle back.",
-            },
-          },
-          {
-            tipe: "Number",
-            props: {
-              title: "Kadar VOC",
-              value: "0.25",
-              thld: "0.1", //JANGAN LUPA DIBALIK THRESHOLDNYA, harusnya batas maksimum, bukan minimum
-              unit: "ppm",
-              info:
-                "Wiggle room driving the initiative forward low hanging fruit. Not the long pole in my tent.",
-            },
-          },
-        ],
       ],
     },
     {
@@ -722,6 +578,19 @@ export default () => {
             unit: "kol/m3",
             info:
               "Don't over think it put a record on and see who dances parallel path hammer out, nor that is a good problem to have.",
+          },
+        },
+        {
+          tipe: "Circular",
+          props: {
+            title: "Kepuasan pengguna gedung",
+            value: "3.5",
+            minV: "0",
+            maxV: "5",
+            unit: "",
+            thld: "3",
+            info:
+              "Turn the crank offline this discussion draft policy ppml proposal yet closing these latest prospects is like putting socks on an octopus you better eat a reality sandwich before you walk back in that boardroom",
           },
         },
       ],
