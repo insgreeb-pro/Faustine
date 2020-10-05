@@ -45,18 +45,18 @@ const slides = [
 ]
 
 const data = [
-  {
-    tipe: "Circular",
-    props: {
-      title: "Energi terbarukan yang dihasilkan",
-      value: "5",
-      minV: "0",
-      maxV: "100",
-      unit: "%",
-      info:
-        "Cloud strategy one-sheet, for cloud native container based, come up with something buzzworthy, but low-hanging fruit.",
-    },
-  },
+  // {
+  //   tipe: "Circular",
+  //   props: {
+  //     title: "Energi terbarukan yang dihasilkan",
+  //     value: "5",
+  //     minV: "0",
+  //     maxV: "100",
+  //     unit: "%",
+  //     info:
+  //       "Cloud strategy one-sheet, for cloud native container based, come up with something buzzworthy, but low-hanging fruit.",
+  //   },
+  // },
   {
     tipe: "Number",
     props: {
@@ -69,9 +69,9 @@ const data = [
   },
 ]
 
-const render = data.map(({ tipe, props }) => (
-  <Selector key={props} tipe={tipe} props={props} />
-))
+const render = data.map(({ tipe, props }, idx) => {
+  return <Selector key={idx} tipe={tipe} props={props} />
+})
 
 export default () => (
   <>

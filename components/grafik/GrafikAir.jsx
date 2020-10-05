@@ -186,7 +186,7 @@ const options = {
     fontFamily: "'Montserrat', sans-serif",
     fontStyle: "normal",
     fontSize: 18,
-    text: "Konsumsi Air Bangunan",
+    text: "Konsumsi Air DTNTF UGM",
   },
   legend: {
     position: "right",

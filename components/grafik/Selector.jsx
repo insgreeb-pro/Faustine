@@ -6,23 +6,24 @@ export default ({ parent, options, active }) => {
   const title = {
     style: {
       fontWeight: "700",
-      fontSize: "1.2em",
+      fontSize: "1em",
       lineHeight: "1.2em",
       textAlign: "center",
       margin: "5% 0 5% 0",
     },
   }
 
-  const radios = [
-    { name: "Satu Gedung" },
-    { name: "Lantai 1" },
-    { name: "Lantai 2" },
-  ]
+  // const radios = [
+  //   { name: "Satu Gedung" },
+  //   { name: "Lantai 1" },
+  //   { name: "Lantai 2" },
+  // ]
+
   return (
     <Container>
-      <p {...title}>Data yang Ditampilkan</p>
+      <p {...title}>Indeks Konsumsi Energi</p>
       <ButtonGroup toggle vertical>
-        {radios.map((radio, idx) => (
+        {options.map((data, idx) => (
           <ToggleButton
             key={idx}
             type="radio"
@@ -30,11 +31,11 @@ export default ({ parent, options, active }) => {
             name="radio"
             value={idx}
             checked={active === idx}
-            onChange={() => {
+            onClick={() => {
               parent(idx)
             }}
           >
-            {radio.name}
+            {data.name}
           </ToggleButton>
         ))}
       </ButtonGroup>

@@ -83,9 +83,10 @@ const data = [
   },
 ]
 
-const render = data.map(({ tipe, props }) => (
-  <Selector key={props} tipe={tipe} props={props} />
-))
+const render = data.map(({ tipe, props }, idx) => {
+  return <Selector key={idx} tipe={tipe} props={props} />
+})
+
 export default () => (
   <>
     <Head>
