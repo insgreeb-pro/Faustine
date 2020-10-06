@@ -90,8 +90,7 @@ body {
 .pengelolaanbangunantingkatlanjut {
   grid-template:
     "carousel carousel carousel . carousel2" 11vw
-    "carousel carousel carousel . carousel2" 11vw
-    ".        .        .        . .        " 11vw / 11vw 11vw 11vw 11vw 36vw;
+    "carousel carousel carousel . carousel2" 11vw /11vw 11vw 11vw 11vw 36vw;
 }
 
 /* CONTAINER */
