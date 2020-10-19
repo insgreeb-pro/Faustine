@@ -2,11 +2,11 @@ import ToggleButton from "react-bootstrap/ToggleButton"
 import ToggleButtonGroup from "react-bootstrap/ToggleButtonGroup"
 import Container from "../Container"
 
-export default ({ parent, options, active }) => {
-  const title = {
+export default ({ parent, options, active, title }) => {
+  const titleProp = {
     style: {
       fontWeight: "700",
-      fontSize: "1em",
+      fontSize: "1.3em",
       lineHeight: "1.2em",
       textAlign: "center",
       margin: "5% 0 5% 0",
@@ -14,8 +14,8 @@ export default ({ parent, options, active }) => {
   }
 
   return (
-    <Container>
-      <p {...title}>Indeks Konsumsi Energi</p>
+    <div className="neo" style={{ gridArea: "ctrl", height: "auto" }}>
+      <p {...titleProp}>{title}</p>
 
       <ToggleButtonGroup
         vertical
@@ -31,6 +31,6 @@ export default ({ parent, options, active }) => {
           </ToggleButton>
         ))}
       </ToggleButtonGroup>
-    </Container>
+    </div>
   )
 }

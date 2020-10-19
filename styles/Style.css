@@ -51,8 +51,8 @@ body {
 
 .tatalahantepatguna {
   grid-template:
-    "map map map map pipipopo" 11vw
-    "map map map map pipipopo" 11vw
+    "map map map map tampakatas" 11vw
+    "map map map map tampakatas" 11vw
     "map map map map  carousel" 11vw
     ". . . . carousel" 11vw
     ". . . . keterangan" 11vw / 11vw 11vw 11vw 11vw 36vw;
@@ -60,15 +60,15 @@ body {
 
 .konservasienergi {
   grid-template:
-    "chart chart chart chart carousel" 11vw
-    "chart chart chart chart carousel" 11vw
-    "ctrl eter eter . keterangan" 11vw / 11vw 11vw 11vw 11vw 36vw;
+    " chart chart chart ctrl carousel" 11vw
+    " chart chart chart ctrl carousel" 11vw
+    ". . . . keterangan" 11vw / 11vw 11vw 11vw 11vw 36vw;
 }
 
 .pengelolaanair {
   grid-template:
-    "chart chart chart chart carousel" 11vw
-    "chart chart chart chart carousel" 11vw
+    "chart chart chart ctrl carousel" 11vw
+    "chart chart chart ctrl carousel" 11vw
     ". . . . keterangan" 11vw / 11vw 11vw 11vw 11vw 36vw;
 }
 
@@ -144,6 +144,10 @@ body {
   border-color: #073b4c;
   outline: none !important;
   box-shadow: none !important;
+}
+
+.btn-primary {
+  font-size: 1.3em;
 }
 
 .neoSmall {

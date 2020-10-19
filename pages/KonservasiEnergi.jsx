@@ -90,8 +90,6 @@ export default () => (
       {render}
       <Carousel slides={slides}>Upaya lain yang dilakukan</Carousel>
       <Keterangan />
-      <div></div>
-      <div></div>
       <Copyright />
     </GridContent>
   </>

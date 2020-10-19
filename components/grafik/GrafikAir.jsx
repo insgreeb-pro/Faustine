@@ -236,10 +236,18 @@ export default () => {
 
   return (
     <>
-      <div style={{ gridArea: "chart", padding: "3%" }} className="neo">
+      <div
+        style={{ gridArea: "chart", padding: "3%", height: "auto" }}
+        className="neo"
+      >
         <Line data={datas[Display].data} options={options} redraw />
       </div>
-      <Selector parent={setDisplay} active={Display} options={datas} />
+      <Selector
+        parent={setDisplay}
+        active={Display}
+        options={datas}
+        title="Pilihan Grafik"
+      />
     </>
   )
 }

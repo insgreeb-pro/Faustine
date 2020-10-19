@@ -18,13 +18,11 @@ const data = [
       "Nov 19",
       "Dec 19",
       "Jan 20",
-      "Feb 20",
-      "Mar 20",
     ],
     datasets: [
       {
         label: "HVAC",
-        data: [42, 21, 52.5, 40, 28, 26.5, 11, 8.5, 24, 42.5, 42, 26, 41, 44],
+        data: [42, 21, 52.5, 40, 28, 26.5, 11, 8.5, 24, 42.5, 42, 26],
         borderColor: "#93C9F2",
         backgroundColor: "#93C9F2",
         pointHitRadius: "10",
@@ -32,7 +30,7 @@ const data = [
       },
       {
         label: "Sistem Pencahayaan",
-        data: [27, 21, 27.5, 22, 23, 21.5, 10, 3.5, 19, 26.5, 27, 18, 26, 29],
+        data: [27, 21, 27.5, 22, 23, 21.5, 10, 3.5, 19, 26.5, 27, 18],
         borderColor: "#93F2D5",
         backgroundColor: "#93F2D5",
         pointHitRadius: "10",
@@ -40,7 +38,7 @@ const data = [
       },
       {
         label: "Sistem Beban Lainnya",
-        data: [6, 7, 7.5, 6.7, 7, 6, 5, 7.2, 3, 4.1, 5.3, 7.5, 5.5, 8.3],
+        data: [6, 7, 7.5, 6.7, 7, 6, 5, 7.2, 3, 4.1, 5.3, 7.5],
         borderColor: "#F2AD93",
         backgroundColor: "#F2AD93",
         pointHitRadius: "10",
@@ -76,13 +74,11 @@ const data = [
       "Nov 19",
       "Dec 19",
       "Jan 20",
-      "Feb 20",
-      "Mar 20",
     ],
     datasets: [
       {
         label: "HVAC",
-        data: [20, 10, 24.5, 18, 19, 10, 7, 3.5, 12.5, 22.5, 21, 15, 29, 20],
+        data: [20, 10, 24.5, 18, 19, 10, 7, 3.5, 12.5, 22.5, 21, 15],
         borderColor: "#93C9F2",
         backgroundColor: "#93C9F2",
         pointHitRadius: "10",
@@ -90,7 +86,7 @@ const data = [
       },
       {
         label: "Sistem Pencahayaan",
-        data: [12, 7, 10.5, 9, 12, 14, 3, 2, 8, 12, 19.5, 4, 14, 15.5],
+        data: [12, 7, 10.5, 9, 12, 14, 3, 2, 8, 12, 19.5, 4],
         borderColor: "#93F2D5",
         backgroundColor: "#93F2D5",
         pointHitRadius: "10",
@@ -98,7 +94,7 @@ const data = [
       },
       {
         label: "Sistem Beban Lainnya",
-        data: [2, 3, 4.5, 4.7, 3, 3, 2, 3.1, 1.4, 2.1, 2.3, 4.5, 3.5, 3],
+        data: [2, 3, 4.5, 4.7, 3, 3, 2, 3.1, 1.4, 2.1, 2.3, 4.5],
         borderColor: "#F2AD93",
         backgroundColor: "#F2AD93",
         pointHitRadius: "10",
@@ -106,22 +102,7 @@ const data = [
       },
       {
         label: "Baseline",
-        data: [
-          -85,
-          -73,
-          -61,
-          -51,
-          -41,
-          -33,
-          -25,
-          -19,
-          -13.5,
-          -9,
-          -5.5,
-          -3,
-          -1.5,
-          -1,
-        ],
+        data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         borderColor: "#232323",
         backgroundColor: "rgba(0,0,0,0)",
         pointHitRadius: 0,
@@ -149,13 +130,11 @@ const data = [
       "Nov 19",
       "Dec 19",
       "Jan 20",
-      "Feb 20",
-      "Mar 20",
     ],
     datasets: [
       {
         label: "HVAC",
-        data: [22, 11, 28.5, 22, 9, 16.5, 4, 5, 11.5, 20, 21, 11, 12, 24],
+        data: [22, 11, 28.5, 22, 9, 16.5, 4, 5, 11.5, 20, 21, 11],
         borderColor: "#93C9F2",
         backgroundColor: "#93C9F2",
         pointHitRadius: "10",
@@ -163,7 +142,7 @@ const data = [
       },
       {
         label: "Sistem Pencahayaan",
-        data: [15, 14, 17, 13, 11, 7.5, 7, 1.5, 11, 14.5, 5.5, 14, 12, 13.5],
+        data: [15, 14, 17, 13, 11, 7.5, 7, 1.5, 11, 14.5, 5.5, 14],
         borderColor: "#93F2D5",
         backgroundColor: "#93F2D5",
         pointHitRadius: "10",
@@ -171,7 +150,7 @@ const data = [
       },
       {
         label: "Sistem Beban Lainnya",
-        data: [4, 4, 3, 2, 4, 3, 2, 4.1, 1.6, 2, 3, 3, 2, 5.3],
+        data: [4, 4, 3, 2, 4, 3, 2, 4.1, 1.6, 2, 3, 3],
         borderColor: "#F2AD93",
         backgroundColor: "#F2AD93",
         pointHitRadius: "10",
@@ -179,22 +158,7 @@ const data = [
       },
       {
         label: "Baseline",
-        data: [
-          -85,
-          -73,
-          -61,
-          -51,
-          -41,
-          -33,
-          -25,
-          -19,
-          -13.5,
-          -9,
-          -5.5,
-          -3,
-          -1.5,
-          -1,
-        ],
+        data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         borderColor: "#232323",
         backgroundColor: "rgba(0,0,0,0)",
         pointHitRadius: 0,
@@ -256,10 +220,18 @@ export default () => {
 
   return (
     <>
-      <div style={{ gridArea: "chart", padding: "3%" }} className="neo">
+      <div
+        style={{ gridArea: "chart", padding: "3%", height: "auto" }}
+        className="neo"
+      >
         <Bar data={data[Display]} options={options} redraw />
       </div>
-      <Selector parent={setDisplay} active={Display} options={data} />
+      <Selector
+        parent={setDisplay}
+        active={Display}
+        options={data}
+        title="Indeks Konsumsi Energi"
+      />
     </>
   )
 }

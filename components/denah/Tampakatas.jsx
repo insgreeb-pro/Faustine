@@ -13,14 +13,14 @@ export default () => {
     <div
       style={{
         padding: "2%",
-        gridArea: "pipipopo",
+        gridArea: "tampakatas",
         display: "flex",
         flexDirection: "column",
       }}
       className="neo"
     >
       {/* Judul */}
-      <div className="mapTitle">
+      <div className="mapTitle" style={{ height: "10%", overflow: "auto" }}>
         Departemen Teknik Nuklir dan Teknik Fisika tampak atas
       </div>
       {/* Peta */}
