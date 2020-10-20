@@ -150,7 +150,7 @@ const datas = [
               8.5,
               7.3,
             ],
-            borderColor: "#93F2D5",
+            borderColor: "#F2AD93",
             backgroundColor: "rgba(0,0,0,0)",
             pointHitRadius: "10",
             yAxisID: "data",
