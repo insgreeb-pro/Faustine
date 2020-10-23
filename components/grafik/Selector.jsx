@@ -1,6 +1,5 @@
 import ToggleButton from "react-bootstrap/ToggleButton"
 import ToggleButtonGroup from "react-bootstrap/ToggleButtonGroup"
-import Container from "../Container"
 
 export default ({ parent, options, active, title }) => {
   const titleProp = {

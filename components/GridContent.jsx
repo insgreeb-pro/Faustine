@@ -3,7 +3,7 @@ import Accordion from "react-bootstrap/Accordion"
 import { useAccordionToggle } from "react-bootstrap/AccordionToggle"
 import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button"
-import { FaArrowCircleUp } from "react-icons/fa"
+import { AiFillCloseCircle } from "react-icons/ai"
 
 const isi = {
   style: {
@@ -19,11 +19,11 @@ const isi = {
   },
 }
 
-function CustomToggle({ eventKey }) {
+function Show({ eventKey }) {
   const [Content, setContent] = useState(true)
 
   const tog = useAccordionToggle(eventKey, () => setContent(!Content))
-  const render = Content ? "Hide" : "Show"
+  const render = Content ? "Show Info" : "Hide Info"
 
   return (
     <Button
@@ -38,13 +38,13 @@ function CustomToggle({ eventKey }) {
 
 function Title({ title, caption }) {
   return (
-    <Accordion defaultActiveKey="0">
+    <Accordion>
       <>
         <div className="title">
           {title}
-          <CustomToggle eventKey="0" />
+          <Show eventKey="0" />
         </div>
-        <Accordion.Collapse eventKey="0">
+        <Accordion.Collapse eventKey="0" style={{ position: "relative" }}>
           <p {...isi}>{caption}</p>
         </Accordion.Collapse>
       </>

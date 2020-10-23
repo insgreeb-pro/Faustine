@@ -189,47 +189,96 @@ const datas = [
   },
 ]
 
-const options = {
-  legend: {
-    position: "right",
-    labels: {
-      fontSize: 14,
+const options = [
+  {
+    legend: {
+      position: "right",
+      labels: {
+        fontSize: 14,
+      },
+    },
+    title: {
+      display: true,
+      fontFamily: "'Montserrat', sans-serif",
+      fontStyle: "normal",
+      fontSize: 18,
+      text: "Konsumsi Air DTNTF",
+    },
+    scales: {
+      xAxes: [
+        {
+          stacked: true,
+          scaleLabel: { display: true, labelString: "Tanggal" },
+        },
+      ],
+      yAxes: [
+        {
+          id: "baseline",
+          display: false,
+          ticks: {
+            min: 0,
+            max: 100,
+          },
+          type: "linear",
+        },
+        {
+          id: "data",
+          type: "linear",
+          stacked: true,
+          ticks: {
+            min: 0,
+            max: 100,
+          },
+          scaleLabel: { display: true, labelString: "Konsumsi Air(L/m2/org)" },
+        },
+      ],
     },
   },
-  title: {
-    display: true,
-    fontFamily: "'Montserrat', sans-serif",
-    fontStyle: "normal",
-    fontSize: 18,
-    text: "Konsumsi Air DTNTF",
-  },
-  scales: {
-    xAxes: [
-      { stacked: true, scaleLabel: { display: true, labelString: "Tanggal" } },
-    ],
-    yAxes: [
-      {
-        id: "baseline",
-        display: false,
-        ticks: {
-          min: 0,
-          max: 100,
-        },
-        type: "linear",
+  {
+    legend: {
+      position: "right",
+      labels: {
+        fontSize: 14,
       },
-      {
-        id: "data",
-        type: "linear",
-        stacked: true,
-        ticks: {
-          min: 0,
-          max: 100,
+    },
+    title: {
+      display: true,
+      fontFamily: "'Montserrat', sans-serif",
+      fontStyle: "normal",
+      fontSize: 18,
+      text: "Sumber Air DTNTF",
+    },
+    scales: {
+      xAxes: [
+        {
+          stacked: true,
+          scaleLabel: { display: true, labelString: "Tanggal" },
         },
-        scaleLabel: { display: true, labelString: "Konsumsi Air(L/m2/org)" },
-      },
-    ],
+      ],
+      yAxes: [
+        {
+          id: "baseline",
+          display: false,
+          ticks: {
+            min: 0,
+            max: 100,
+          },
+          type: "linear",
+        },
+        {
+          id: "data",
+          type: "linear",
+          stacked: true,
+          ticks: {
+            min: 0,
+            max: 100,
+          },
+          scaleLabel: { display: true, labelString: "Konsumsi Air(L/m2/org)" },
+        },
+      ],
+    },
   },
-}
+]
 
 export default () => {
   const [Display, setDisplay] = useState(0)
@@ -240,7 +289,7 @@ export default () => {
         style={{ gridArea: "chart", padding: "3%", height: "auto" }}
         className="neo"
       >
-        <Line data={datas[Display].data} options={options} redraw />
+        <Line data={datas[Display].data} options={options[Display]} redraw />
       </div>
       <Selector
         parent={setDisplay}

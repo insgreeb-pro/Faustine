@@ -173,47 +173,131 @@ const data = [
   },
 ]
 
-const options = {
-  legend: {
-    position: "right",
-    labels: {
-      fontSize: 14,
+const options = [
+  {
+    legend: {
+      position: "right",
+      labels: {
+        fontSize: 14,
+      },
+    },
+    title: {
+      display: true,
+      fontFamily: "'Montserrat', sans-serif",
+      fontStyle: "normal",
+      fontSize: 18,
+      text: "Indeks Konsumsi Energi (IKE) DTNTF UGM",
+    },
+    scales: {
+      xAxes: [
+        { stacked: true, scaleLabel: { display: true, labelString: "Bulan" } },
+      ],
+      yAxes: [
+        {
+          id: "data",
+          type: "linear",
+          stacked: true,
+          ticks: {
+            min: 0,
+            max: 100,
+          },
+          scaleLabel: { display: true, labelString: "IKE (kWh/m2)" },
+        },
+        {
+          id: "baseline",
+          display: false,
+          ticks: {
+            min: 0,
+            max: 100,
+          },
+          type: "linear",
+        },
+      ],
     },
   },
-  title: {
-    display: true,
-    fontFamily: "'Montserrat', sans-serif",
-    fontStyle: "normal",
-    fontSize: 18,
-    text: "Indeks Konsumsi Energi DTNTF UGM",
-  },
-  scales: {
-    xAxes: [
-      { stacked: true, scaleLabel: { display: true, labelString: "Bulan" } },
-    ],
-    yAxes: [
-      {
-        id: "data",
-        type: "linear",
-        stacked: true,
-        ticks: {
-          min: 0,
-          max: 100,
-        },
-        scaleLabel: { display: true, labelString: "IKE (kWh/m2)" },
+  {
+    legend: {
+      position: "right",
+      labels: {
+        fontSize: 14,
       },
-      {
-        id: "baseline",
-        display: false,
-        ticks: {
-          min: 0,
-          max: 100,
+    },
+    title: {
+      display: true,
+      fontFamily: "'Montserrat', sans-serif",
+      fontStyle: "normal",
+      fontSize: 18,
+      text: "Indeks Konsumsi Energi (IKE) Lantai 1",
+    },
+    scales: {
+      xAxes: [
+        { stacked: true, scaleLabel: { display: true, labelString: "Bulan" } },
+      ],
+      yAxes: [
+        {
+          id: "data",
+          type: "linear",
+          stacked: true,
+          ticks: {
+            min: 0,
+            max: 100,
+          },
+          scaleLabel: { display: true, labelString: "IKE (kWh/m2)" },
         },
-        type: "linear",
-      },
-    ],
+        {
+          id: "baseline",
+          display: false,
+          ticks: {
+            min: 0,
+            max: 100,
+          },
+          type: "linear",
+        },
+      ],
+    },
   },
-}
+  {
+    legend: {
+      position: "right",
+      labels: {
+        fontSize: 14,
+      },
+    },
+    title: {
+      display: true,
+      fontFamily: "'Montserrat', sans-serif",
+      fontStyle: "normal",
+      fontSize: 18,
+      text: "Indeks Konsumsi Energi (IKE) Lantai 2",
+    },
+    scales: {
+      xAxes: [
+        { stacked: true, scaleLabel: { display: true, labelString: "Bulan" } },
+      ],
+      yAxes: [
+        {
+          id: "data",
+          type: "linear",
+          stacked: true,
+          ticks: {
+            min: 0,
+            max: 100,
+          },
+          scaleLabel: { display: true, labelString: "IKE (kWh/m2)" },
+        },
+        {
+          id: "baseline",
+          display: false,
+          ticks: {
+            min: 0,
+            max: 100,
+          },
+          type: "linear",
+        },
+      ],
+    },
+  },
+]
 
 export default () => {
   const [Display, setDisplay] = useState(0)
@@ -224,7 +308,7 @@ export default () => {
         style={{ gridArea: "chart", padding: "3%", height: "auto" }}
         className="neo"
       >
-        <Bar data={data[Display]} options={options} redraw />
+        <Bar data={data[Display]} options={options[Display]} redraw />
       </div>
       <Selector
         parent={setDisplay}
