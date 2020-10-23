@@ -1,8 +1,8 @@
 import { useState } from "react"
-import Modal from "react-bootstrap/Modal"
-
 import Selector from "../data/Selector"
+import Modal from "react-bootstrap/Modal"
 import Button from "react-bootstrap/Button"
+import { FaLightbulb } from "react-icons/fa"
 
 export default ({ lokasi, left, top, data }) => {
   const [show, setShow] = useState(false)
@@ -28,8 +28,11 @@ export default ({ lokasi, left, top, data }) => {
           top: top,
           marginLeft: "-0.5vh",
           marginTop: "-0.5vh",
+          fontSize: ".7em",
         }}
-      />
+      >
+        <FaLightbulb />
+      </Button>
 
       <Modal show={show} size="lg" onHide={handleClose}>
         <Modal.Header>
