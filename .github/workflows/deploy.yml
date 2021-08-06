@@ -25,7 +25,7 @@ jobs:
       - run: npm install
         name: Install Dependencies
 
-      - run: npm run build && npm install export
+      - run: npm run build && npm run export
         env:
           NODE_ENV: production
 
