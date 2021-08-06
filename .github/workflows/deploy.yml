@@ -32,7 +32,6 @@ jobs:
       - run: yarn
         name: Install Dependencies
 
-      - run: yarn test:deptree
       - run: yarn export
         env:
           NODE_ENV: production
