@@ -29,6 +29,8 @@ jobs:
         env:
           NODE_ENV: production
 
+      - run: cp .htaccess out/.htaccess
+
       - name: Remove old version
         uses: appleboy/ssh-action@master
         with:
