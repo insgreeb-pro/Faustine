@@ -22,7 +22,7 @@
   "homepage": "https://github.com/insgreeb-pro/Faustine#readme",
   "dependencies": {
     "bootstrap": "^4.5.0",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "esri-leaflet": "^2.5.0",
     "esri-leaflet-cluster": "^2.1.0",
     "esri-leaflet-geocoder": "^2.3.3",
